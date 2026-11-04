@@ -11,7 +11,9 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AuthRouteImport } from './routes/auth'
+import { Route as BacaEpisodeIdRouteImport } from './routes/baca.$episodeId'
 import { Route as SeriSlugRouteImport } from './routes/seri.$slug'
+import { Route as ApiPublicSamplePageEpisodeIdPageRouteImport } from './routes/api/public/sample-page.$episodeId.$page'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -23,40 +25,75 @@ const AuthRoute = AuthRouteImport.update({
   path: '/auth',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BacaEpisodeIdRoute = BacaEpisodeIdRouteImport.update({
+  id: '/baca/$episodeId',
+  path: '/baca/$episodeId',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const SeriSlugRoute = SeriSlugRouteImport.update({
   id: '/seri/$slug',
   path: '/seri/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ApiPublicSamplePageEpisodeIdPageRoute =
+  ApiPublicSamplePageEpisodeIdPageRouteImport.update({
+    id: '/api/public/sample-page/$episodeId/$page',
+    path: '/api/public/sample-page/$episodeId/$page',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/auth': typeof AuthRoute
+  '/baca/$episodeId': typeof BacaEpisodeIdRoute
   '/seri/$slug': typeof SeriSlugRoute
+  '/api/public/sample-page/$episodeId/$page': typeof ApiPublicSamplePageEpisodeIdPageRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/auth': typeof AuthRoute
+  '/baca/$episodeId': typeof BacaEpisodeIdRoute
   '/seri/$slug': typeof SeriSlugRoute
+  '/api/public/sample-page/$episodeId/$page': typeof ApiPublicSamplePageEpisodeIdPageRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/auth': typeof AuthRoute
+  '/baca/$episodeId': typeof BacaEpisodeIdRoute
   '/seri/$slug': typeof SeriSlugRoute
+  '/api/public/sample-page/$episodeId/$page': typeof ApiPublicSamplePageEpisodeIdPageRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/auth' | '/seri/$slug'
+  fullPaths:
+    | '/'
+    | '/auth'
+    | '/baca/$episodeId'
+    | '/seri/$slug'
+    | '/api/public/sample-page/$episodeId/$page'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/auth' | '/seri/$slug'
-  id: '__root__' | '/' | '/auth' | '/seri/$slug'
+  to:
+    | '/'
+    | '/auth'
+    | '/baca/$episodeId'
+    | '/seri/$slug'
+    | '/api/public/sample-page/$episodeId/$page'
+  id:
+    | '__root__'
+    | '/'
+    | '/auth'
+    | '/baca/$episodeId'
+    | '/seri/$slug'
+    | '/api/public/sample-page/$episodeId/$page'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AuthRoute: typeof AuthRoute
+  BacaEpisodeIdRoute: typeof BacaEpisodeIdRoute
   SeriSlugRoute: typeof SeriSlugRoute
+  ApiPublicSamplePageEpisodeIdPageRoute: typeof ApiPublicSamplePageEpisodeIdPageRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -75,11 +112,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AuthRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/baca/$episodeId': {
+      id: '/baca/$episodeId'
+      path: '/baca/$episodeId'
+      fullPath: '/baca/$episodeId'
+      preLoaderRoute: typeof BacaEpisodeIdRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/seri/$slug': {
       id: '/seri/$slug'
       path: '/seri/$slug'
       fullPath: '/seri/$slug'
       preLoaderRoute: typeof SeriSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/public/sample-page/$episodeId/$page': {
+      id: '/api/public/sample-page/$episodeId/$page'
+      path: '/api/public/sample-page/$episodeId/$page'
+      fullPath: '/api/public/sample-page/$episodeId/$page'
+      preLoaderRoute: typeof ApiPublicSamplePageEpisodeIdPageRouteImport
       parentRoute: typeof rootRouteImport
     }
   }
@@ -88,7 +139,9 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AuthRoute: AuthRoute,
+  BacaEpisodeIdRoute: BacaEpisodeIdRoute,
   SeriSlugRoute: SeriSlugRoute,
+  ApiPublicSamplePageEpisodeIdPageRoute: ApiPublicSamplePageEpisodeIdPageRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
