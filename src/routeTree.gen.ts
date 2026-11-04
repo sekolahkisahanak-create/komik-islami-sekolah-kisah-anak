@@ -10,33 +10,220 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AdminRouteImport } from './routes/admin'
+import { Route as AuthRouteImport } from './routes/auth'
+import { Route as KelasRouteImport } from './routes/kelas'
+import { Route as LanggananRouteImport } from './routes/langganan'
+import { Route as LaporanOrangTuaRouteImport } from './routes/laporan-orang-tua'
+import { Route as NotifikasiRouteImport } from './routes/notifikasi'
+import { Route as PerpustakaanRouteImport } from './routes/perpustakaan'
+import { Route as PrivasiRouteImport } from './routes/privasi'
+import { Route as ProfilRouteImport } from './routes/profil'
+import { Route as SyaratRouteImport } from './routes/syarat'
+import { Route as TentangRouteImport } from './routes/tentang'
+import { Route as BacaEpisodeIdRouteImport } from './routes/baca.$episodeId'
+import { Route as SeriSlugRouteImport } from './routes/seri.$slug'
+import { Route as ApiPublicSamplePageEpisodeIdPageRouteImport } from './routes/api/public/sample-page.$episodeId.$page'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AdminRoute = AdminRouteImport.update({
+  id: '/admin',
+  path: '/admin',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AuthRoute = AuthRouteImport.update({
+  id: '/auth',
+  path: '/auth',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const KelasRoute = KelasRouteImport.update({
+  id: '/kelas',
+  path: '/kelas',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LanggananRoute = LanggananRouteImport.update({
+  id: '/langganan',
+  path: '/langganan',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LaporanOrangTuaRoute = LaporanOrangTuaRouteImport.update({
+  id: '/laporan-orang-tua',
+  path: '/laporan-orang-tua',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const NotifikasiRoute = NotifikasiRouteImport.update({
+  id: '/notifikasi',
+  path: '/notifikasi',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PerpustakaanRoute = PerpustakaanRouteImport.update({
+  id: '/perpustakaan',
+  path: '/perpustakaan',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PrivasiRoute = PrivasiRouteImport.update({
+  id: '/privasi',
+  path: '/privasi',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProfilRoute = ProfilRouteImport.update({
+  id: '/profil',
+  path: '/profil',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SyaratRoute = SyaratRouteImport.update({
+  id: '/syarat',
+  path: '/syarat',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TentangRoute = TentangRouteImport.update({
+  id: '/tentang',
+  path: '/tentang',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BacaEpisodeIdRoute = BacaEpisodeIdRouteImport.update({
+  id: '/baca/$episodeId',
+  path: '/baca/$episodeId',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SeriSlugRoute = SeriSlugRouteImport.update({
+  id: '/seri/$slug',
+  path: '/seri/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiPublicSamplePageEpisodeIdPageRoute =
+  ApiPublicSamplePageEpisodeIdPageRouteImport.update({
+    id: '/api/public/sample-page/$episodeId/$page',
+    path: '/api/public/sample-page/$episodeId/$page',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/admin': typeof AdminRoute
+  '/auth': typeof AuthRoute
+  '/kelas': typeof KelasRoute
+  '/langganan': typeof LanggananRoute
+  '/laporan-orang-tua': typeof LaporanOrangTuaRoute
+  '/notifikasi': typeof NotifikasiRoute
+  '/perpustakaan': typeof PerpustakaanRoute
+  '/privasi': typeof PrivasiRoute
+  '/profil': typeof ProfilRoute
+  '/syarat': typeof SyaratRoute
+  '/tentang': typeof TentangRoute
+  '/baca/$episodeId': typeof BacaEpisodeIdRoute
+  '/seri/$slug': typeof SeriSlugRoute
+  '/api/public/sample-page/$episodeId/$page': typeof ApiPublicSamplePageEpisodeIdPageRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/admin': typeof AdminRoute
+  '/auth': typeof AuthRoute
+  '/kelas': typeof KelasRoute
+  '/langganan': typeof LanggananRoute
+  '/laporan-orang-tua': typeof LaporanOrangTuaRoute
+  '/notifikasi': typeof NotifikasiRoute
+  '/perpustakaan': typeof PerpustakaanRoute
+  '/privasi': typeof PrivasiRoute
+  '/profil': typeof ProfilRoute
+  '/syarat': typeof SyaratRoute
+  '/tentang': typeof TentangRoute
+  '/baca/$episodeId': typeof BacaEpisodeIdRoute
+  '/seri/$slug': typeof SeriSlugRoute
+  '/api/public/sample-page/$episodeId/$page': typeof ApiPublicSamplePageEpisodeIdPageRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/admin': typeof AdminRoute
+  '/auth': typeof AuthRoute
+  '/kelas': typeof KelasRoute
+  '/langganan': typeof LanggananRoute
+  '/laporan-orang-tua': typeof LaporanOrangTuaRoute
+  '/notifikasi': typeof NotifikasiRoute
+  '/perpustakaan': typeof PerpustakaanRoute
+  '/privasi': typeof PrivasiRoute
+  '/profil': typeof ProfilRoute
+  '/syarat': typeof SyaratRoute
+  '/tentang': typeof TentangRoute
+  '/baca/$episodeId': typeof BacaEpisodeIdRoute
+  '/seri/$slug': typeof SeriSlugRoute
+  '/api/public/sample-page/$episodeId/$page': typeof ApiPublicSamplePageEpisodeIdPageRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/admin'
+    | '/auth'
+    | '/kelas'
+    | '/langganan'
+    | '/laporan-orang-tua'
+    | '/notifikasi'
+    | '/perpustakaan'
+    | '/privasi'
+    | '/profil'
+    | '/syarat'
+    | '/tentang'
+    | '/baca/$episodeId'
+    | '/seri/$slug'
+    | '/api/public/sample-page/$episodeId/$page'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/admin'
+    | '/auth'
+    | '/kelas'
+    | '/langganan'
+    | '/laporan-orang-tua'
+    | '/notifikasi'
+    | '/perpustakaan'
+    | '/privasi'
+    | '/profil'
+    | '/syarat'
+    | '/tentang'
+    | '/baca/$episodeId'
+    | '/seri/$slug'
+    | '/api/public/sample-page/$episodeId/$page'
+  id:
+    | '__root__'
+    | '/'
+    | '/admin'
+    | '/auth'
+    | '/kelas'
+    | '/langganan'
+    | '/laporan-orang-tua'
+    | '/notifikasi'
+    | '/perpustakaan'
+    | '/privasi'
+    | '/profil'
+    | '/syarat'
+    | '/tentang'
+    | '/baca/$episodeId'
+    | '/seri/$slug'
+    | '/api/public/sample-page/$episodeId/$page'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AdminRoute: typeof AdminRoute
+  AuthRoute: typeof AuthRoute
+  KelasRoute: typeof KelasRoute
+  LanggananRoute: typeof LanggananRoute
+  LaporanOrangTuaRoute: typeof LaporanOrangTuaRoute
+  NotifikasiRoute: typeof NotifikasiRoute
+  PerpustakaanRoute: typeof PerpustakaanRoute
+  PrivasiRoute: typeof PrivasiRoute
+  ProfilRoute: typeof ProfilRoute
+  SyaratRoute: typeof SyaratRoute
+  TentangRoute: typeof TentangRoute
+  BacaEpisodeIdRoute: typeof BacaEpisodeIdRoute
+  SeriSlugRoute: typeof SeriSlugRoute
+  ApiPublicSamplePageEpisodeIdPageRoute: typeof ApiPublicSamplePageEpisodeIdPageRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +235,123 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/admin': {
+      id: '/admin'
+      path: '/admin'
+      fullPath: '/admin'
+      preLoaderRoute: typeof AdminRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/auth': {
+      id: '/auth'
+      path: '/auth'
+      fullPath: '/auth'
+      preLoaderRoute: typeof AuthRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/kelas': {
+      id: '/kelas'
+      path: '/kelas'
+      fullPath: '/kelas'
+      preLoaderRoute: typeof KelasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/langganan': {
+      id: '/langganan'
+      path: '/langganan'
+      fullPath: '/langganan'
+      preLoaderRoute: typeof LanggananRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/laporan-orang-tua': {
+      id: '/laporan-orang-tua'
+      path: '/laporan-orang-tua'
+      fullPath: '/laporan-orang-tua'
+      preLoaderRoute: typeof LaporanOrangTuaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/notifikasi': {
+      id: '/notifikasi'
+      path: '/notifikasi'
+      fullPath: '/notifikasi'
+      preLoaderRoute: typeof NotifikasiRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/perpustakaan': {
+      id: '/perpustakaan'
+      path: '/perpustakaan'
+      fullPath: '/perpustakaan'
+      preLoaderRoute: typeof PerpustakaanRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/privasi': {
+      id: '/privasi'
+      path: '/privasi'
+      fullPath: '/privasi'
+      preLoaderRoute: typeof PrivasiRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/profil': {
+      id: '/profil'
+      path: '/profil'
+      fullPath: '/profil'
+      preLoaderRoute: typeof ProfilRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/syarat': {
+      id: '/syarat'
+      path: '/syarat'
+      fullPath: '/syarat'
+      preLoaderRoute: typeof SyaratRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tentang': {
+      id: '/tentang'
+      path: '/tentang'
+      fullPath: '/tentang'
+      preLoaderRoute: typeof TentangRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/baca/$episodeId': {
+      id: '/baca/$episodeId'
+      path: '/baca/$episodeId'
+      fullPath: '/baca/$episodeId'
+      preLoaderRoute: typeof BacaEpisodeIdRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/seri/$slug': {
+      id: '/seri/$slug'
+      path: '/seri/$slug'
+      fullPath: '/seri/$slug'
+      preLoaderRoute: typeof SeriSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/public/sample-page/$episodeId/$page': {
+      id: '/api/public/sample-page/$episodeId/$page'
+      path: '/api/public/sample-page/$episodeId/$page'
+      fullPath: '/api/public/sample-page/$episodeId/$page'
+      preLoaderRoute: typeof ApiPublicSamplePageEpisodeIdPageRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AdminRoute: AdminRoute,
+  AuthRoute: AuthRoute,
+  KelasRoute: KelasRoute,
+  LanggananRoute: LanggananRoute,
+  LaporanOrangTuaRoute: LaporanOrangTuaRoute,
+  NotifikasiRoute: NotifikasiRoute,
+  PerpustakaanRoute: PerpustakaanRoute,
+  PrivasiRoute: PrivasiRoute,
+  ProfilRoute: ProfilRoute,
+  SyaratRoute: SyaratRoute,
+  TentangRoute: TentangRoute,
+  BacaEpisodeIdRoute: BacaEpisodeIdRoute,
+  SeriSlugRoute: SeriSlugRoute,
+  ApiPublicSamplePageEpisodeIdPageRoute: ApiPublicSamplePageEpisodeIdPageRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
