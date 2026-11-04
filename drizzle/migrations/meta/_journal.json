@@ -8,6 +8,13 @@
       "when": 1793803275592,
       "tag": "0000_komik_islami_core",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1793803298430,
+      "tag": "0001_first_episode_preview",
+      "breakpoints": true
     }
   ]
 }
