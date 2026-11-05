@@ -119,8 +119,18 @@ function Reader() {
 
   return (
     <div className="relative">
-      <div className="sticky top-16 z-30 h-1.5 bg-muted">
-        <div className="h-full bg-gold transition-[width]" style={{ width: `${progress * 100}%` }} />
+      <div className="sticky top-16 z-30 border-b bg-background/95 px-4 py-2 backdrop-blur">
+        <div className="mx-auto flex max-w-3xl items-center gap-3">
+          {access?.can && access.pages.length > 0 && (
+            <span className="shrink-0 text-xs font-semibold">
+              Halaman {Math.min(access.pages.length, Math.max(1, Math.ceil(progress * access.pages.length)))} dari {access.pages.length}
+            </span>
+          )}
+          <div className="h-2.5 flex-1 overflow-hidden rounded-full bg-muted" role="progressbar" aria-valuenow={Math.round(progress * 100)} aria-valuemin={0} aria-valuemax={100}>
+            <div className="h-full rounded-full bg-gold transition-[width]" style={{ width: `${progress * 100}%` }} />
+          </div>
+          <span className="shrink-0 text-xs text-muted-foreground">{Math.round(progress * 100)}%</span>
+        </div>
       </div>
       <div className="mx-auto max-w-3xl px-2 py-6 sm:px-4">
         <div className="px-2">

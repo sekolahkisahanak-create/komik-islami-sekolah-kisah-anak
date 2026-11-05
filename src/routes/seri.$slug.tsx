@@ -108,7 +108,9 @@ function SeriesPage() {
                 <Star className={`h-6 w-6 ${n <= (rating?.mine ?? 0) ? "fill-gold text-gold" : "text-muted-foreground"}`} />
               </button>
             ))}
-            <span className="ml-2 text-sm text-muted-foreground">{rating?.avg ? `${rating.avg} (${rating.count} penilaian)` : "Belum ada penilaian"}</span>
+            {rating?.avg && Number(rating.count) > 0 && (
+              <span className="ml-2 text-sm text-muted-foreground">{rating.avg} ({rating.count} penilaian)</span>
+            )}
           </div>
           <p className="mt-4 leading-relaxed">{s.synopsis}</p>
           <div className="mt-4 flex flex-wrap gap-2">
