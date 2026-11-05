@@ -57,7 +57,7 @@ function ProfilePage() {
     e.preventDefault();
     if (!user || !name.trim()) return;
     const { error } = await supabase.from("child_profiles").insert({ parent_id: user.id, name: name.trim(), age_group: age });
-    if (error) return toast.error(error.message);
+    if (error) { toast.error(error.message); return; }
     setName("");
     await refresh();
     toast.success("Profil anak ditambahkan");
@@ -69,7 +69,7 @@ function ProfilePage() {
   }
   async function savePin() {
     const { error } = await supabase.rpc("set_parent_pin", { _pin: pin });
-    if (error) return toast.error(error.message);
+    if (error) { toast.error(error.message); return; }
     setPin("");
     toast.success("PIN orang tua tersimpan");
     qc.invalidateQueries({ queryKey: ["achievements"] });
