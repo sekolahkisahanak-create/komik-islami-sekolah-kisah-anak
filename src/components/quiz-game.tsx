@@ -125,7 +125,7 @@ export function QuizGame({ episodeId, episodeTitle, questions, nextEpisodeId, on
     }
   }
 
-  function useFifty() {
+  function applyFifty() {
     if (lifelineUsed || picked !== null) return;
     setLifelineUsed(true);
     setHidden(fiftyFifty(q.options.length, q.correct_index));
@@ -198,7 +198,7 @@ export function QuizGame({ episodeId, episodeTitle, questions, nextEpisodeId, on
             })}
           </div>
           {picked === null && (
-            <Button variant="onNavy" className="self-center" disabled={lifelineUsed} onClick={useFifty}>
+            <Button variant="onNavy" className="self-center" disabled={lifelineUsed} onClick={applyFifty}>
               50:50 {lifelineUsed ? "(sudah dipakai)" : "— hapus 2 jawaban salah"}
             </Button>
           )}
