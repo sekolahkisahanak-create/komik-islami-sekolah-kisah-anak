@@ -75,15 +75,15 @@ function SeriesPage() {
   const refresh = () => qc.invalidateQueries({ queryKey: ["series-mine", s.id] });
 
   async function toggle(table: "favorites" | "bookmarks", on: boolean) {
-    if (!user) return toast("Masuk dulu untuk menyimpan.");
+    if (!user) { toast("Masuk dulu untuk menyimpan."); return; }
     if (on) await supabase.from(table).delete().eq("series_id", s!.id).eq("child_id", activeChildId);
     else await supabase.from(table).insert({ user_id: user.id, child_id: activeChildId, series_id: s!.id });
     refresh();
   }
   async function rate(stars: number) {
-    if (!user) return toast("Masuk dulu untuk memberi rating.");
+    if (!user) { toast("Masuk dulu untuk memberi rating."); return; }
     await supabase.from("ratings").upsert({ user_id: user.id, series_id: s!.id, stars });
-    qc.invalidateQueries({ queryKey: ["rating", s.id] });
+    qc.invalidateQueries({ queryKey: ["rating", s!.id] });
   }
   const url = typeof window !== "undefined" ? window.location.href : "";
 
@@ -108,7 +108,9 @@ function SeriesPage() {
                 <Star className={`h-6 w-6 ${n <= (rating?.mine ?? 0) ? "fill-gold text-gold" : "text-muted-foreground"}`} />
               </button>
             ))}
-            <span className="ml-2 text-sm text-muted-foreground">{rating?.avg ? `${rating.avg} (${rating.count} penilaian)` : "Belum ada penilaian"}</span>
+            {rating?.avg && Number(rating.count) > 0 && (
+              <span className="ml-2 text-sm text-muted-foreground">{rating.avg} ({rating.count} penilaian)</span>
+            )}
           </div>
           <p className="mt-4 leading-relaxed">{s.synopsis}</p>
           <div className="mt-4 flex flex-wrap gap-2">
