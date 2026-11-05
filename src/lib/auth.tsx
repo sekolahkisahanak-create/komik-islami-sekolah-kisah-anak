@@ -4,8 +4,8 @@ import { supabase } from "@/integrations/supabase/client";
 
 export const NIL = "00000000-0000-0000-0000-000000000000";
 
-export type Child = { id: string; name: string; age_group: string };
-type Profile = { id: string; display_name: string; notify_new_episode: boolean };
+export type Child = { id: string; name: string; age_group: string; lembaga: string };
+type Profile = { id: string; display_name: string; notify_new_episode: boolean; lembaga: string };
 
 type AuthCtx = {
   ready: boolean;
@@ -40,9 +40,9 @@ export function AuthProvider({ children: kids }: { children: ReactNode }) {
       return;
     }
     const [p, r, c] = await Promise.all([
-      supabase.from("profiles").select("id, display_name, notify_new_episode").eq("id", u.id).maybeSingle(),
+      supabase.from("profiles").select("id, display_name, notify_new_episode, lembaga").eq("id", u.id).maybeSingle(),
       supabase.from("user_roles").select("role").eq("user_id", u.id),
-      supabase.from("child_profiles").select("id, name, age_group").order("created_at"),
+      supabase.from("child_profiles").select("id, name, age_group, lembaga").order("created_at"),
     ]);
     setProfile(p.data ?? null);
     setIsAdmin(!!r.data?.some((x) => x.role === "admin"));

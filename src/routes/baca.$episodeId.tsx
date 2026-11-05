@@ -179,7 +179,7 @@ function Reader() {
               )}
             </div>
             {finished && (
-              <LearningSection episodeId={ep.id} ibrah={ep.ibrah} discussion={ep.discussion_question} sources={series.sources} />
+              <LearningSection key={ep.id} episodeId={ep.id} episodeTitle={ep.title} nextEpisodeId={next?.id} ibrah={ep.ibrah} discussion={ep.discussion_question} sources={series.sources} />
             )}
           </div>
         )}

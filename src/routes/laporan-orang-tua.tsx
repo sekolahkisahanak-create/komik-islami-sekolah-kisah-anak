@@ -20,18 +20,22 @@ export const Route = createFileRoute("/laporan-orang-tua")({
   component: ParentReport,
 });
 
+type QuizRow = { child_id: string; name: string; episode_title: string; best_score: number; attempts: number; last_at: string };
 type Row = { child_id: string; name: string; episodes_read: number; episodes_finished: number; quizzes_done: number; reading_days: number };
 
 function ParentReport() {
   const { user, ready } = useAuth();
   const [pin, setPin] = useState("");
   const [rows, setRows] = useState<Row[] | null>(null);
+  const [quiz, setQuiz] = useState<QuizRow[]>([]);
   if (ready && !user) return <Page><NeedLogin /></Page>;
 
   async function open() {
     const { data, error } = await supabase.rpc("parent_weekly_report", { _pin: pin });
     if (error) { toast.error(error.message.includes("PIN") ? "PIN salah atau belum dibuat" : error.message); return; }
     setRows(data as Row[]);
+    const qr = await supabase.rpc("parent_quiz_report", { _pin: pin });
+    setQuiz((qr.data ?? []) as QuizRow[]);
   }
 
   return (
@@ -70,6 +74,26 @@ function ParentReport() {
               </div>
             ))}
           </div>
+          <section className="mt-8 rounded-3xl bg-card p-5 shadow-card">
+            <h2 className="text-xl font-bold">Skor Kuis Seru</h2>
+            <p className="text-sm text-muted-foreground">Skor terbaik per episode untuk setiap profil.</p>
+            {quiz.length === 0 ? (
+              <p className="mt-3 text-sm text-muted-foreground">Belum ada kuis yang dimainkan.</p>
+            ) : (
+              <div className="mt-3 overflow-x-auto">
+                <table className="w-full text-sm">
+                  <thead><tr className="text-left text-muted-foreground"><th className="py-2">Profil</th><th>Episode</th><th>Skor terbaik</th><th>Dimainkan</th></tr></thead>
+                  <tbody>
+                    {quiz.map((r) => (
+                      <tr key={r.child_id + r.episode_title} className="border-t">
+                        <td className="py-2 font-semibold">{r.name}</td><td>{r.episode_title}</td><td className="font-bold">{r.best_score}</td><td>{r.attempts}x</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            )}
+          </section>
         </>
       )}
     </Page>

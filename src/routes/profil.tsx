@@ -30,6 +30,7 @@ function ProfilePage() {
   const [name, setName] = useState("");
   const [age, setAge] = useState("8-12");
   const [pin, setPin] = useState("");
+  const [lembaga, setLembaga] = useState("");
 
   const { data } = useQuery({
     queryKey: ["achievements", user?.id, activeChildId],
@@ -56,9 +57,10 @@ function ProfilePage() {
   async function addChild(e: React.FormEvent) {
     e.preventDefault();
     if (!user || !name.trim()) return;
-    const { error } = await supabase.from("child_profiles").insert({ parent_id: user.id, name: name.trim(), age_group: age });
+    const { error } = await supabase.from("child_profiles").insert({ parent_id: user.id, name: name.trim(), age_group: age, lembaga: lembaga.trim() });
     if (error) { toast.error(error.message); return; }
     setName("");
+    setLembaga("");
     await refresh();
     toast.success("Profil anak ditambahkan");
   }
@@ -73,6 +75,15 @@ function ProfilePage() {
     setPin("");
     toast.success("PIN orang tua tersimpan");
     qc.invalidateQueries({ queryKey: ["achievements"] });
+  }
+  async function saveLembaga(id: string, value: string) {
+    const v = value.trim();
+    const { error } = id === NIL
+      ? await supabase.from("profiles").update({ lembaga: v }).eq("id", user!.id)
+      : await supabase.from("child_profiles").update({ lembaga: v }).eq("id", id);
+    if (error) { toast.error(error.message); return; }
+    await refresh();
+    toast.success("Sekolah/Lembaga tersimpan");
   }
   async function toggleNotif(v: boolean) {
     await supabase.from("profiles").update({ notify_new_episode: v }).eq("id", user!.id);
@@ -103,11 +114,25 @@ function ProfilePage() {
         </div>
         <form onSubmit={addChild} className="mt-4 flex flex-col gap-2 sm:flex-row">
           <Input placeholder="Nama anak" value={name} onChange={(e) => setName(e.target.value)} />
+          <Input placeholder="Sekolah/Lembaga (opsional)" value={lembaga} onChange={(e) => setLembaga(e.target.value)} />
           <select value={age} onChange={(e) => setAge(e.target.value)} className="h-9 rounded-md border bg-card px-3 text-sm">
             {AGE_GROUPS.map((a) => <option key={a} value={a}>Usia {a}</option>)}
           </select>
           <Button type="submit" variant="hero">Tambah Anak</Button>
         </form>
+        <div className="mt-5 border-t pt-4">
+          <h3 className="font-bold">Sekolah/Lembaga</h3>
+          <p className="text-sm text-muted-foreground">Dipakai untuk tab "Sekolahku" di Papan Skor. Tulis nama yang sama dengan teman sekolahmu.</p>
+          <div className="mt-3 space-y-2">
+            {[{ id: NIL, name: `${profile?.display_name ?? "Saya"} (orang tua)`, lembaga: profile?.lembaga ?? "" }, ...children].map((c) => (
+              <form key={c.id} className="flex flex-col gap-2 sm:flex-row sm:items-center" onSubmit={(e) => { e.preventDefault(); saveLembaga(c.id, String(new FormData(e.currentTarget).get("lembaga") ?? "")); }}>
+                <span className="w-48 shrink-0 text-sm font-semibold">{c.name}</span>
+                <Input name="lembaga" defaultValue={c.lembaga} placeholder="mis. SDIT Al-Fikri" aria-label={`Sekolah/Lembaga ${c.name}`} />
+                <Button type="submit" variant="outline">Simpan</Button>
+              </form>
+            ))}
+          </div>
+        </div>
       </section>
 
       <section className="rounded-3xl bg-navy p-5 text-navy-foreground shadow-card">
