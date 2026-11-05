@@ -14,6 +14,7 @@ const NAV = [
   { to: "/", label: "Beranda" },
   { to: "/perpustakaan", label: "Perpustakaanku" },
   { to: "/kelas", label: "Kelas" },
+  { to: "/papan-skor", label: "Papan Skor" },
   { to: "/langganan", label: "Langganan" },
   { to: "/tentang", label: "Tentang" },
 ] as const;
