@@ -37,7 +37,7 @@ export function fiftyFifty(optionCount: number, correctIndex: number, rand: () =
   const wrong = Array.from({ length: optionCount }, (_, i) => i).filter((i) => i !== correctIndex);
   for (let i = wrong.length - 1; i > 0; i--) {
     const j = Math.floor(rand() * (i + 1));
-    [wrong[i], wrong[j]] = [wrong[j], wrong[i]];
+    const t = wrong[i]!; wrong[i] = wrong[j]!; wrong[j] = t;
   }
   return wrong.slice(0, 2);
 }

@@ -59,7 +59,7 @@ export class QuizSound {
       const t = this.ctx.currentTime + 0.05;
       const m = melody[step % melody.length];
       if (m) this.tone(m, t, beat * 0.9, "triangle", 0.05);
-      if (step % 2 === 0) this.tone(bass[(step / 2) % bass.length], t, beat * 1.8, "sine", 0.06);
+      if (step % 2 === 0) this.tone(bass[(step / 2) % bass.length] ?? 131, t, beat * 1.8, "sine", 0.06);
       step++;
     };
     this.musicTimer = window.setInterval(tick, beat * 1000);

@@ -16,6 +16,7 @@ import { Route as KelasRouteImport } from './routes/kelas'
 import { Route as LanggananRouteImport } from './routes/langganan'
 import { Route as LaporanOrangTuaRouteImport } from './routes/laporan-orang-tua'
 import { Route as NotifikasiRouteImport } from './routes/notifikasi'
+import { Route as PapanSkorRouteImport } from './routes/papan-skor'
 import { Route as PerpustakaanRouteImport } from './routes/perpustakaan'
 import { Route as PrivasiRouteImport } from './routes/privasi'
 import { Route as ProfilRouteImport } from './routes/profil'
@@ -58,6 +59,11 @@ const LaporanOrangTuaRoute = LaporanOrangTuaRouteImport.update({
 const NotifikasiRoute = NotifikasiRouteImport.update({
   id: '/notifikasi',
   path: '/notifikasi',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PapanSkorRoute = PapanSkorRouteImport.update({
+  id: '/papan-skor',
+  path: '/papan-skor',
   getParentRoute: () => rootRouteImport,
 } as any)
 const PerpustakaanRoute = PerpustakaanRouteImport.update({
@@ -110,6 +116,7 @@ export interface FileRoutesByFullPath {
   '/langganan': typeof LanggananRoute
   '/laporan-orang-tua': typeof LaporanOrangTuaRoute
   '/notifikasi': typeof NotifikasiRoute
+  '/papan-skor': typeof PapanSkorRoute
   '/perpustakaan': typeof PerpustakaanRoute
   '/privasi': typeof PrivasiRoute
   '/profil': typeof ProfilRoute
@@ -127,6 +134,7 @@ export interface FileRoutesByTo {
   '/langganan': typeof LanggananRoute
   '/laporan-orang-tua': typeof LaporanOrangTuaRoute
   '/notifikasi': typeof NotifikasiRoute
+  '/papan-skor': typeof PapanSkorRoute
   '/perpustakaan': typeof PerpustakaanRoute
   '/privasi': typeof PrivasiRoute
   '/profil': typeof ProfilRoute
@@ -145,6 +153,7 @@ export interface FileRoutesById {
   '/langganan': typeof LanggananRoute
   '/laporan-orang-tua': typeof LaporanOrangTuaRoute
   '/notifikasi': typeof NotifikasiRoute
+  '/papan-skor': typeof PapanSkorRoute
   '/perpustakaan': typeof PerpustakaanRoute
   '/privasi': typeof PrivasiRoute
   '/profil': typeof ProfilRoute
@@ -164,6 +173,7 @@ export interface FileRouteTypes {
     | '/langganan'
     | '/laporan-orang-tua'
     | '/notifikasi'
+    | '/papan-skor'
     | '/perpustakaan'
     | '/privasi'
     | '/profil'
@@ -181,6 +191,7 @@ export interface FileRouteTypes {
     | '/langganan'
     | '/laporan-orang-tua'
     | '/notifikasi'
+    | '/papan-skor'
     | '/perpustakaan'
     | '/privasi'
     | '/profil'
@@ -198,6 +209,7 @@ export interface FileRouteTypes {
     | '/langganan'
     | '/laporan-orang-tua'
     | '/notifikasi'
+    | '/papan-skor'
     | '/perpustakaan'
     | '/privasi'
     | '/profil'
@@ -216,6 +228,7 @@ export interface RootRouteChildren {
   LanggananRoute: typeof LanggananRoute
   LaporanOrangTuaRoute: typeof LaporanOrangTuaRoute
   NotifikasiRoute: typeof NotifikasiRoute
+  PapanSkorRoute: typeof PapanSkorRoute
   PerpustakaanRoute: typeof PerpustakaanRoute
   PrivasiRoute: typeof PrivasiRoute
   ProfilRoute: typeof ProfilRoute
@@ -275,6 +288,13 @@ declare module '@tanstack/react-router' {
       path: '/notifikasi'
       fullPath: '/notifikasi'
       preLoaderRoute: typeof NotifikasiRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/papan-skor': {
+      id: '/papan-skor'
+      path: '/papan-skor'
+      fullPath: '/papan-skor'
+      preLoaderRoute: typeof PapanSkorRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/perpustakaan': {
@@ -344,6 +364,7 @@ const rootRouteChildren: RootRouteChildren = {
   LanggananRoute: LanggananRoute,
   LaporanOrangTuaRoute: LaporanOrangTuaRoute,
   NotifikasiRoute: NotifikasiRoute,
+  PapanSkorRoute: PapanSkorRoute,
   PerpustakaanRoute: PerpustakaanRoute,
   PrivasiRoute: PrivasiRoute,
   ProfilRoute: ProfilRoute,

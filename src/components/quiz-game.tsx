@@ -18,12 +18,12 @@ function shuffle<T>(arr: T[]) {
   const a = [...arr];
   for (let i = a.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
+    const tmp = a[i] as T; a[i] = a[j] as T; a[j] = tmp;
   }
   return a;
 }
 
-export function QuizGame({ episodeId, episodeTitle, questions, nextEpisodeId, onClose }: { episodeId: string; episodeTitle: string; questions: QuizQ[]; nextEpisodeId?: string; onClose: () => void }) {
+export function QuizGame({ episodeId, episodeTitle, questions, nextEpisodeId, onClose }: { episodeId: string; episodeTitle: string; questions: QuizQ[]; nextEpisodeId?: string | undefined; onClose: () => void }) {
   const { user, activeChildId } = useAuth();
   const qc = useQueryClient();
   const sound = useRef<QuizSound | null>(null);
@@ -126,7 +126,7 @@ export function QuizGame({ episodeId, episodeTitle, questions, nextEpisodeId, on
   }
 
   function applyFifty() {
-    if (lifelineUsed || picked !== null) return;
+    if (lifelineUsed || picked !== null || !q) return;
     setLifelineUsed(true);
     setHidden(fiftyFifty(q.options.length, q.correct_index));
   }
