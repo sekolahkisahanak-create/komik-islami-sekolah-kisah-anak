@@ -109,7 +109,7 @@ function Reader() {
   const next = siblings[idx + 1];
 
   async function markFinished() {
-    if (!user) return toast("Masuk dulu untuk menyimpan progres.");
+    if (!user) { toast("Masuk dulu untuk menyimpan progres."); return; }
     setFinished(true);
     await save(1, true);
     qc.invalidateQueries({ queryKey: ["progress"] });

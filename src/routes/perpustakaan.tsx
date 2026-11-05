@@ -32,7 +32,7 @@ function useSaved(table: "favorites" | "bookmarks") {
   });
 }
 
-function Grid({ items }: { items?: SeriesRow[] }) {
+function Grid({ items }: { items?: SeriesRow[] | undefined }) {
   if (!items?.length) return <p className="py-8 text-center text-muted-foreground">Belum ada.</p>;
   return <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">{items.map((s) => <SeriesCard key={s.id} s={s} />)}</div>;
 }

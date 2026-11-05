@@ -30,7 +30,7 @@ function ParentReport() {
 
   async function open() {
     const { data, error } = await supabase.rpc("parent_weekly_report", { _pin: pin });
-    if (error) return toast.error(error.message.includes("PIN") ? "PIN salah atau belum dibuat" : error.message);
+    if (error) { toast.error(error.message.includes("PIN") ? "PIN salah atau belum dibuat" : error.message); return; }
     setRows(data as Row[]);
   }
 
