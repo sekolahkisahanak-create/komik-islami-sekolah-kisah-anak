@@ -114,6 +114,7 @@ export type Database = {
           age_group: string
           created_at: string
           id: string
+          lembaga: string
           name: string
           parent_id: string
         }
@@ -121,6 +122,7 @@ export type Database = {
           age_group?: string
           created_at?: string
           id?: string
+          lembaga?: string
           name: string
           parent_id: string
         }
@@ -128,6 +130,7 @@ export type Database = {
           age_group?: string
           created_at?: string
           id?: string
+          lembaga?: string
           name?: string
           parent_id?: string
         }
@@ -425,18 +428,21 @@ export type Database = {
           created_at: string
           display_name: string
           id: string
+          lembaga: string
           notify_new_episode: boolean
         }
         Insert: {
           created_at?: string
           display_name?: string
           id: string
+          lembaga?: string
           notify_new_episode?: boolean
         }
         Update: {
           created_at?: string
           display_name?: string
           id?: string
+          lembaga?: string
           notify_new_episode?: boolean
         }
         Relationships: []
@@ -445,26 +451,35 @@ export type Database = {
         Row: {
           correct_index: number
           episode_id: string
+          explanation: string
           id: string
           options: string[]
           position: number
           question: string
+          quiz_id: string | null
+          time_limit_sec: number
         }
         Insert: {
           correct_index?: number
           episode_id: string
+          explanation?: string
           id?: string
           options: string[]
           position?: number
           question: string
+          quiz_id?: string | null
+          time_limit_sec?: number
         }
         Update: {
           correct_index?: number
           episode_id?: string
+          explanation?: string
           id?: string
           options?: string[]
           position?: number
           question?: string
+          quiz_id?: string | null
+          time_limit_sec?: number
         }
         Relationships: [
           {
@@ -474,33 +489,49 @@ export type Database = {
             referencedRelation: "episodes"
             referencedColumns: ["id"]
           },
+          {
+            foreignKeyName: "quiz_questions_quiz_id_fkey"
+            columns: ["quiz_id"]
+            isOneToOne: false
+            referencedRelation: "quizzes"
+            referencedColumns: ["id"]
+          },
         ]
       }
       quiz_results: {
         Row: {
           child_id: string
+          correct: number | null
           created_at: string
           episode_id: string
           id: string
+          mode: string
           score: number
+          stars: number | null
           total: number
           user_id: string
         }
         Insert: {
           child_id?: string
+          correct?: number | null
           created_at?: string
           episode_id: string
           id?: string
+          mode?: string
           score: number
+          stars?: number | null
           total: number
           user_id: string
         }
         Update: {
           child_id?: string
+          correct?: number | null
           created_at?: string
           episode_id?: string
           id?: string
+          mode?: string
           score?: number
+          stars?: number | null
           total?: number
           user_id?: string
         }
@@ -509,6 +540,35 @@ export type Database = {
             foreignKeyName: "quiz_results_episode_id_fkey"
             columns: ["episode_id"]
             isOneToOne: false
+            referencedRelation: "episodes"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      quizzes: {
+        Row: {
+          created_at: string
+          episode_id: string
+          id: string
+          title: string
+        }
+        Insert: {
+          created_at?: string
+          episode_id: string
+          id?: string
+          title?: string
+        }
+        Update: {
+          created_at?: string
+          episode_id?: string
+          id?: string
+          title?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "quizzes_episode_id_fkey"
+            columns: ["episode_id"]
+            isOneToOne: true
             referencedRelation: "episodes"
             referencedColumns: ["id"]
           },
@@ -776,6 +836,17 @@ export type Database = {
       is_class_member: { Args: { _class_id: string }; Returns: boolean }
       is_class_owner: { Args: { _class_id: string }; Returns: boolean }
       join_class: { Args: { _code: string; _name: string }; Returns: string }
+      parent_quiz_report: {
+        Args: { _pin: string }
+        Returns: {
+          attempts: number
+          best_score: number
+          child_id: string
+          episode_title: string
+          last_at: string
+          name: string
+        }[]
+      }
       parent_weekly_report: {
         Args: { _pin: string }
         Returns: {
@@ -787,6 +858,15 @@ export type Database = {
           reading_days: number
         }[]
       }
+      quiz_leaderboard: {
+        Args: { _child_id: string; _scope: string }
+        Returns: {
+          is_me: boolean
+          player_name: string
+          quizzes: number
+          total_points: number
+        }[]
+      }
       series_rating: {
         Args: { _series_id: string }
         Returns: {
@@ -795,6 +875,18 @@ export type Database = {
         }[]
       }
       set_parent_pin: { Args: { _pin: string }; Returns: undefined }
+      submit_quiz_attempt: {
+        Args: {
+          _child_id: string
+          _correct: number
+          _episode_id: string
+          _mode: string
+          _score: number
+          _stars: number
+          _total: number
+        }
+        Returns: undefined
+      }
       verify_parent_pin: { Args: { _pin: string }; Returns: boolean }
     }
     Enums: {
