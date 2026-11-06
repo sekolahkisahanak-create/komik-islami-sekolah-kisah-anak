@@ -5,7 +5,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { Button } from "@/components/ui/button";
 import { QuizGame, type QuizQ } from "@/components/quiz-game";
 
-export function LearningSection({ episodeId, episodeTitle, nextEpisodeId, ibrah, discussion, sources }: { episodeId: string; episodeTitle: string; nextEpisodeId?: string; ibrah: string[]; discussion: string; sources: string }) {
+export function LearningSection({ episodeId, episodeTitle, nextEpisodeId, ibrah, discussion, sources }: { episodeId: string; episodeTitle: string; nextEpisodeId?: string | undefined; ibrah: string[]; discussion: string; sources: string }) {
   const [playing, setPlaying] = useState(false);
   const { data: qs = [] } = useQuery({
     queryKey: ["quiz", episodeId],
