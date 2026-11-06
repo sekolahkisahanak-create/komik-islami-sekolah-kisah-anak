@@ -55,6 +55,7 @@ function AdminPage() {
 
   async function saveQ(i: number) {
     const q = draft[i];
+    if (!q) return;
     if (!q.question.trim() || q.options.some((o) => !o.trim())) { toast.error("Isi pertanyaan dan keempat pilihan."); return; }
     try {
       const quiz_id = await ensureQuiz();
@@ -69,6 +70,7 @@ function AdminPage() {
 
   async function removeQ(i: number) {
     const q = draft[i];
+    if (!q) return;
     if (q.id) {
       const { error } = await supabase.from("quiz_questions").delete().eq("id", q.id);
       if (error) { toast.error(error.message); return; }
