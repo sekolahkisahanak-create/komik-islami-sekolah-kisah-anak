@@ -17,6 +17,8 @@ export const Route = createFileRoute("/admin")({
       { name: "description", content: "Kelola konten komik dan soal Kuis Seru per episode." },
       { property: "og:title", content: "Dasbor Admin — Komik Islami" },
       { property: "og:description", content: "Kelola konten komik dan soal Kuis Seru per episode." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: AdminPage,
