@@ -1,1 +1,129 @@
-aW1wb3J0IHsgY3JlYXRlRmlsZVJvdXRlIH0gZnJvbSAiQHRhbnN0YWNrL3JlYWN0LXJvdXRlciI7CmltcG9ydCB7IHVzZVF1ZXJ5LCB1c2VRdWVyeUNsaWVudCB9IGZyb20gIkB0YW5zdGFjay9yZWFjdC1xdWVyeSI7CmltcG9ydCB7IHVzZUVmZmVjdCwgdXNlU3RhdGUgfSBmcm9tICJyZWFjdCI7CmltcG9ydCB7IFBsdXMsIFNhdmUsIFRyYXNoMiB9IGZyb20gImx1Y2lkZS1yZWFjdCI7CmltcG9ydCB7IHRvYXN0IH0gZnJvbSAic29ubmVyIjsKaW1wb3J0IHsgc3VwYWJhc2UgfSBmcm9tICJAL2ludGVncmF0aW9ucy9zdXBhYmFzZS9jbGllbnQiOwppbXBvcnQgeyB1c2VBdXRoIH0gZnJvbSAiQC9saWIvYXV0aCI7CmltcG9ydCB7IE5lZWRMb2dpbiwgUGFnZSB9IGZyb20gIkAvY29tcG9uZW50cy9sYXlvdXQiOwppbXBvcnQgeyBCdXR0b24gfSBmcm9tICJAL2NvbXBvbmVudHMvdWkvYnV0dG9uIjsKaW1wb3J0IHsgSW5wdXQgfSBmcm9tICJAL2NvbXBvbmVudHMvdWkvaW5wdXQiOwoKZXhwb3J0IGNvbnN0IFJvdXRlID0gY3JlYXRlRmlsZVJvdXRlKCIvYWRtaW4iKSh7CiAgaGVhZDogKCkgPT4gKHsKICAgIG1ldGE6IFsKICAgICAgeyB0aXRsZTogIkRhc2JvciBBZG1pbiDigJQgS29taWsgSXNsYW1pIFNla29sYWggS2lzYWggQW5hayIgfSwKICAgICAgeyBuYW1lOiAiZGVzY3JpcHRpb24iLCBjb250ZW50OiAiS2Vsb2xhIHNvYWwgS3VpcyBTZXJ1IHBlciBlcGlzb2RlLiIgfSwKICAgICAgeyBwcm9wZXJ0eTogIm9nOnRpdGxlIiwgY29udGVudDogIkRhc2JvciBBZG1pbiDigJQgS29taWsgSXNsYW1pIiB9LAogICAgICB7IHByb3BlcnR5OiAib2c6ZGVzY3JpcHRpb24iLCBjb250ZW50OiAiS2Vsb2xhIHNvYWwgS3VpcyBTZXJ1IHBlciBlcGlzb2RlLiIgfSwKICAgIF0sCiAgfSksCiAgY29tcG9uZW50OiBBZG1pblBhZ2UsCn0pOwoKdHlwZSBRID0geyBpZD86IHN0cmluZzsgcXVlc3Rpb246IHN0cmluZzsgb3B0aW9uczogc3RyaW5nW107IGNvcnJlY3RfaW5kZXg6IG51bWJlcjsgZXhwbGFuYXRpb246IHN0cmluZzsgdGltZV9saW1pdF9zZWM6IG51bWJlcjsgcG9zaXRpb246IG51bWJlciB9OwoKZnVuY3Rpb24gQWRtaW5QYWdlKCkgewogIGNvbnN0IHsgdXNlciwgcmVhZHksIGlzQWRtaW4gfSA9IHVzZUF1dGgoKTsKICBjb25zdCBxYyA9IHVzZVF1ZXJ5Q2xpZW50KCk7CiAgY29uc3QgW2VwaXNvZGVJZCwgc2V0RXBpc29kZUlkXSA9IHVzZVN0YXRlKCIiKTsKICBjb25zdCBbZHJhZnQsIHNldERyYWZ0XSA9IHVzZVN0YXRlPFFbXT4oW10pOwoKICBjb25zdCB7IGRhdGE6IGVwaXNvZGVzID0gW10gfSA9IHVzZVF1ZXJ5KHsKICAgIHF1ZXJ5S2V5OiBbImFkbWluLWVwaXNvZGVzIl0sCiAgICBlbmFibGVkOiBpc0FkbWluLAogICAgcXVlcnlGbjogYXN5bmMgKCkgPT4gKGF3YWl0IHN1cGFiYXNlLmZyb20oImVwaXNvZGVzIikuc2VsZWN0KCJpZCwgbnVtYmVyLCB0aXRsZSwgc2VyaWVzOnNlcmllc19pZCh0aXRsZSkiKS5vcmRlcigic2VyaWVzX2lkIikub3JkZXIoIm51bWJlciIpKS5kYXRhID8/IFtdLAogIH0pOwogIGNvbnN0IHsgZGF0YTogcXVlc3Rpb25zIH0gPSB1c2VRdWVyeSh7CiAgICBxdWVyeUtleTogWyJhZG1pbi1xdWl6IiwgZXBpc29kZUlkXSwKICAgIGVuYWJsZWQ6IGlzQWRtaW4gJiYgISFlcGlzb2RlSWQsCiAgICBxdWVyeUZuOiBhc3luYyAoKSA9PiAoKGF3YWl0IHN1cGFiYXNlLmZyb20oInF1aXpfcXVlc3Rpb25zIikuc2VsZWN0KCJpZCwgcXVlc3Rpb24sIG9wdGlvbnMsIGNvcnJlY3RfaW5kZXgsIGV4cGxhbmF0aW9uLCB0aW1lX2xpbWl0X3NlYywgcG9zaXRpb24iKS5lcSgiZXBpc29kZV9pZCIsIGVwaXNvZGVJZCkub3JkZXIoInBvc2l0aW9uIikpLmRhdGEgPz8gW10pIGFzIFFbXSwKICB9KTsKICB1c2VFZmZlY3QoKCkgPT4geyBpZiAocXVlc3Rpb25zKSBzZXREcmFmdChxdWVzdGlvbnMubWFwKChxKSA9PiAoeyAuLi5xLCBvcHRpb25zOiBbMCwgMSwgMiwgM10ubWFwKChrKSA9PiBxLm9wdGlvbnNba10gPz8gIiIpIH0pKSk7IH0sIFtxdWVzdGlvbnNdKTsKCiAgaWYgKHJlYWR5ICYmICF1c2VyKSByZXR1cm4gPFBhZ2U+PE5lZWRMb2dpbiAvPjwvUGFnZT47CiAgaWYgKHJlYWR5ICYmICFpc0FkbWluKSByZXR1cm4gPFBhZ2U+PHAgY2xhc3NOYW1lPSJ0ZXh0LWNlbnRlciB0ZXh0LW11dGVkLWZvcmVncm91bmQiPkhhbGFtYW4gaW5pIGtodXN1cyBhZG1pbi48L3A+PC9QYWdlPjsKCiAgY29uc3QgdXBkYXRlID0gKGk6IG51bWJlciwgcGF0Y2g6IFBhcnRpYWw8UT4pID0+IHNldERyYWZ0KChkKSA9PiBkLm1hcCgocSwgaykgPT4gKGsgPT09IGkgPyB7IC4uLnEsIC4uLnBhdGNoIH0gOiBxKSkpOwoKICBhc3luYyBmdW5jdGlvbiBlbnN1cmVRdWl6KCkgewogICAgY29uc3QgZXAgPSBlcGlzb2Rlcy5maW5kKChlKSA9PiBlLmlkID09PSBlcGlzb2RlSWQpOwogICAgY29uc3QgeyBkYXRhLCBlcnJvciB9ID0gYXdhaXQgc3VwYWJhc2UuZnJvbSgicXVpenplcyIpLnVwc2VydCh7IGVwaXNvZGVfaWQ6IGVwaXNvZGVJZCwgdGl0bGU6IGBLdWlzIFNlcnU6ICR7ZXA/LnRpdGxlID8/ICIifWAgfSwgeyBvbkNvbmZsaWN0OiAiZXBpc29kZV9pZCIgfSkuc2VsZWN0KCJpZCIpLnNpbmdsZSgpOwogICAgaWYgKGVycm9yKSB0aHJvdyBlcnJvcjsKICAgIHJldHVybiBkYXRhLmlkOwogIH0KCiAgYXN5bmMgZnVuY3Rpb24gc2F2ZVEoaTogbnVtYmVyKSB7CiAgICBjb25zdCBxID0gZHJhZnRbaV07CiAgICBpZiAoIXEpIHJldHVybjsKICAgIGlmICghcS5xdWVzdGlvbi50cmltKCkgfHwgcS5vcHRpb25zLnNvbWUoKG8pID0+ICFvLnRyaW0oKSkpIHsgdG9hc3QuZXJyb3IoIklzaSBwZXJ0YW55YWFuIGRhbiBrZWVtcGF0IHBpbGloYW4uIik7IHJldHVybjsgfQogICAgdHJ5IHsKICAgICAgY29uc3QgcXVpel9pZCA9IGF3YWl0IGVuc3VyZVF1aXooKTsKICAgICAgY29uc3Qgcm93ID0geyBlcGlzb2RlX2lkOiBlcGlzb2RlSWQsIHF1aXpfaWQsIHF1ZXN0aW9uOiBxLnF1ZXN0aW9uLnRyaW0oKSwgb3B0aW9uczogcS5vcHRpb25zLm1hcCgobykgPT4gby50cmltKCkpLCBjb3JyZWN0X2luZGV4OiBxLmNvcnJlY3RfaW5kZXgsIGV4cGxhbmF0aW9uOiBxLmV4cGxhbmF0aW9uLnRyaW0oKSwgdGltZV9saW1pdF9zZWM6IHEudGltZV9saW1pdF9zZWMgfHwgMjAsIHBvc2l0aW9uOiBxLnBvc2l0aW9uIH07CiAgICAgIGNvbnN0IHsgZXJyb3IgfSA9IHEuaWQgPyBhd2FpdCBzdXBhYmFzZS5mcm9tKCJxdWl6X3F1ZXN0aW9ucyIpLnVwZGF0ZShyb3cpLmVxKCJpZCIsIHEuaWQpIDogYXdhaXQgc3VwYWJhc2UuZnJvbSgicXVpel9xdWVzdGlvbnMiKS5pbnNlcnQocm93KTsKICAgICAgaWYgKGVycm9yKSB0aHJvdyBlcnJvcjsKICAgICAgdG9hc3Quc3VjY2VzcygiU29hbCB0ZXJzaW1wYW4iKTsKICAgICAgcWMuaW52YWxpZGF0ZVF1ZXJpZXMoeyBxdWVyeUtleTogWyJhZG1pbi1xdWl6IiwgZXBpc29kZUlkXSB9KTsKICAgICAgcWMuaW52YWxpZGF0ZVF1ZXJpZXMoeyBxdWVyeUtleTogWyJxdWl6IiwgZXBpc29kZUlkXSB9KTsKICAgIH0gY2F0Y2ggKGUpIHsgdG9hc3QuZXJyb3IoKGUgYXMgRXJyb3IpLm1lc3NhZ2UpOyB9CiAgfQoKICBhc3luYyBmdW5jdGlvbiByZW1vdmVRKGk6IG51bWJlcikgewogICAgY29uc3QgcSA9IGRyYWZ0W2ldOwogICAgaWYgKCFxKSByZXR1cm47CiAgICBpZiAocS5pZCkgewogICAgICBjb25zdCB7IGVycm9yIH0gPSBhd2FpdCBzdXBhYmFzZS5mcm9tKCJxdWl6X3F1ZXN0aW9ucyIpLmRlbGV0ZSgpLmVxKCJpZCIsIHEuaWQpOwogICAgICBpZiAoZXJyb3IpIHsgdG9hc3QuZXJyb3IoZXJyb3IubWVzc2FnZSk7IHJldHVybjsgfQogICAgICBxYy5pbnZhbGlkYXRlUXVlcmllcyh7IHF1ZXJ5S2V5OiBbImFkbWluLXF1aXoiLCBlcGlzb2RlSWRdIH0pOwogICAgfSBlbHNlIHNldERyYWZ0KChkKSA9PiBkLmZpbHRlcigoXywgaykgPT4gayAhPT0gaSkpOwogIH0KCiAgcmV0dXJuICgKICAgIDxQYWdlIGNsYXNzTmFtZT0ic3BhY2UteS02Ij4KICAgICAgPGgxIGNsYXNzTmFtZT0idGV4dC0zeGwgZm9udC1leHRyYWJvbGQiPkRhc2JvciBBZG1pbjwvaDE+CiAgICAgIDxzZWN0aW9uIGNsYXNzTmFtZT0icm91bmRlZC0zeGwgYmctY2FyZCBwLTUgc2hhZG93LWNhcmQiPgogICAgICAgIDxoMiBjbGFzc05hbWU9InRleHQteGwgZm9udC1ib2xkIj5Tb2FsIEt1aXMgU2VydTwvaDI+CiAgICAgICAgPGxhYmVsIGNsYXNzTmFtZT0ibXQtMyBibG9jayB0ZXh0LXNtIGZvbnQtc2VtaWJvbGQiIGh0bWxGb3I9ImVwIj5QaWxpaCBlcGlzb2RlPC9sYWJlbD4KICAgICAgICA8c2VsZWN0IGlkPSJlcCIgdmFsdWU9e2VwaXNvZGVJZH0gb25DaGFuZ2U9eyhlKSA9PiBzZXRFcGlzb2RlSWQoZS50YXJnZXQudmFsdWUpfSBjbGFzc05hbWU9Im10LTEgaC0xMCB3LWZ1bGwgcm91bmRlZC1tZCBib3JkZXIgYmctY2FyZCBweC0zIHRleHQtc20iPgogICAgICAgICAgPG9wdGlvbiB2YWx1ZT0iIj7igJQgcGlsaWgg4oCUPC9vcHRpb24+CiAgICAgICAgICB7ZXBpc29kZXMubWFwKChlKSA9PiAoCiAgICAgICAgICAgIDxvcHRpb24ga2V5PXtlLmlkfSB2YWx1ZT17ZS5pZH0+eyhlLnNlcmllcyBhcyB1bmtub3duIGFzIHsgdGl0bGU6IHN0cmluZyB9IHwgbnVsbCk/LnRpdGxlfSDCtyBFcCB7ZS5udW1iZXJ9OiB7ZS50aXRsZX08L29wdGlvbj4KICAgICAgICAgICkpfQogICAgICAgIDwvc2VsZWN0PgogICAgICA8L3NlY3Rpb24+CgogICAgICB7ZXBpc29kZUlkICYmICgKICAgICAgICA8c2VjdGlvbiBjbGFzc05hbWU9InNwYWNlLXktNCI+CiAgICAgICAgICB7ZHJhZnQubWFwKChxLCBpKSA9PiAoCiAgICAgICAgICAgIDxkaXYga2V5PXtxLmlkID8/IGBuZXctJHtpfWB9IGNsYXNzTmFtZT0icm91bmRlZC0zeGwgYmctY2FyZCBwLTUgc2hhZG93LWNhcmQiPgogICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMiI+CiAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9ImZvbnQtYm9sZCI+U29hbDwvc3Bhbj4KICAgICAgICAgICAgICAgIDxJbnB1dCB0eXBlPSJudW1iZXIiIGNsYXNzTmFtZT0idy0yMCIgdmFsdWU9e3EucG9zaXRpb259IG9uQ2hhbmdlPXsoZSkgPT4gdXBkYXRlKGksIHsgcG9zaXRpb246IE51bWJlcihlLnRhcmdldC52YWx1ZSkgfSl9IGFyaWEtbGFiZWw9IlVydXRhbiIgLz4KICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0ibWwtYXV0byB0ZXh0LXNtIj5XYWt0dSAoZGV0aWspPC9zcGFuPgogICAgICAgICAgICAgICAgPElucHV0IHR5cGU9Im51bWJlciIgY2xhc3NOYW1lPSJ3LTIwIiB2YWx1ZT17cS50aW1lX2xpbWl0X3NlY30gb25DaGFuZ2U9eyhlKSA9PiB1cGRhdGUoaSwgeyB0aW1lX2xpbWl0X3NlYzogTnVtYmVyKGUudGFyZ2V0LnZhbHVlKSB9KX0gYXJpYS1sYWJlbD0iQmF0YXMgd2FrdHUiIC8+CiAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgPElucHV0IGNsYXNzTmFtZT0ibXQtMyIgcGxhY2Vob2xkZXI9IlBlcnRhbnlhYW4iIHZhbHVlPXtxLnF1ZXN0aW9ufSBvbkNoYW5nZT17KGUpID0+IHVwZGF0ZShpLCB7IHF1ZXN0aW9uOiBlLnRhcmdldC52YWx1ZSB9KX0gLz4KICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0ibXQtMyBncmlkIGdhcC0yIHNtOmdyaWQtY29scy0yIj4KICAgICAgICAgICAgICAgIHtxLm9wdGlvbnMubWFwKChvLCBrKSA9PiAoCiAgICAgICAgICAgICAgICAgIDxsYWJlbCBrZXk9e2t9IGNsYXNzTmFtZT0iZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTIiPgogICAgICAgICAgICAgICAgICAgIDxpbnB1dCB0eXBlPSJyYWRpbyIgbmFtZT17YGNvcnJlY3QtJHtpfWB9IGNoZWNrZWQ9e3EuY29ycmVjdF9pbmRleCA9PT0ga30gb25DaGFuZ2U9eygpID0+IHVwZGF0ZShpLCB7IGNvcnJlY3RfaW5kZXg6IGsgfSl9IGFyaWEtbGFiZWw9e2BQaWxpaGFuICR7ayArIDF9IGJlbmFyYH0gLz4KICAgICAgICAgICAgICAgICAgICA8SW5wdXQgcGxhY2Vob2xkZXI9e2BQaWxpaGFuICR7ayArIDF9YH0gdmFsdWU9e299IG9uQ2hhbmdlPXsoZSkgPT4gdXBkYXRlKGksIHsgb3B0aW9uczogcS5vcHRpb25zLm1hcCgoeCwgaikgPT4gKGogPT09IGsgPyBlLnRhcmdldC52YWx1ZSA6IHgpKSB9KX0gLz4KICAgICAgICAgICAgICAgICAgPC9sYWJlbD4KICAgICAgICAgICAgICAgICkpfQogICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT0ibXQtMSB0ZXh0LXhzIHRleHQtbXV0ZWQtZm9yZWdyb3VuZCI+VGFuZGFpIGJ1bGF0YW4gZGkgcGlsaWhhbiB5YW5nIGJlbmFyLjwvcD4KICAgICAgICAgICAgICA8SW5wdXQgY2xhc3NOYW1lPSJtdC0zIiBwbGFjZWhvbGRlcj0iUGVuamVsYXNhbiBzYXR1IGthbGltYXQiIHZhbHVlPXtxLmV4cGxhbmF0aW9ufSBvbkNoYW5nZT17KGUpID0+IHVwZGF0ZShpLCB7IGV4cGxhbmF0aW9uOiBlLnRhcmdldC52YWx1ZSB9KX0gLz4KICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0ibXQtMyBmbGV4IGdhcC0yIj4KICAgICAgICAgICAgICAgIDxCdXR0b24gdmFyaWFudD0ibmF2eSIgb25DbGljaz17KCkgPT4gc2F2ZVEoaSl9PjxTYXZlIC8+IFNpbXBhbjwvQnV0dG9uPgogICAgICAgICAgICAgICAgPEJ1dHRvbiB2YXJpYW50PSJvdXRsaW5lIiBvbkNsaWNrPXsoKSA9PiByZW1vdmVRKGkpfT48VHJhc2gyIC8+IEhhcHVzPC9CdXR0b24+CiAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgKSl9CiAgICAgICAgICA8QnV0dG9uIHZhcmlhbnQ9Imhlcm8iIG9uQ2xpY2s9eygpID0+IHNldERyYWZ0KChkKSA9PiBbLi4uZCwgeyBxdWVzdGlvbjogIiIsIG9wdGlvbnM6IFsiIiwgIiIsICIiLCAiIl0sIGNvcnJlY3RfaW5kZXg6IDAsIGV4cGxhbmF0aW9uOiAiIiwgdGltZV9saW1pdF9zZWM6IDIwLCBwb3NpdGlvbjogZC5sZW5ndGggKyAxIH1dKX0+CiAgICAgICAgICAgIDxQbHVzIC8+IFRhbWJhaCBTb2FsCiAgICAgICAgICA8L0J1dHRvbj4KICAgICAgICA8L3NlY3Rpb24+CiAgICAgICl9CiAgICA8L1BhZ2U+CiAgKTsKfQo=
+import { createFileRoute } from "@tanstack/react-router";
+import { useQuery, useQueryClient } from "@tanstack/react-query";
+import { useEffect, useState } from "react";
+import { Plus, Save, Trash2 } from "lucide-react";
+import { toast } from "sonner";
+import { supabase } from "@/integrations/supabase/client";
+import { useAuth } from "@/lib/auth";
+import { NeedLogin, Page } from "@/components/layout";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+
+export const Route = createFileRoute("/admin")({
+  head: () => ({
+    meta: [
+      { title: "Dasbor Admin — Komik Islami Sekolah Kisah Anak" },
+      { name: "description", content: "Kelola soal Kuis Seru per episode." },
+      { property: "og:title", content: "Dasbor Admin — Komik Islami" },
+      { property: "og:description", content: "Kelola soal Kuis Seru per episode." },
+    ],
+  }),
+  component: AdminPage,
+});
+
+type Q = { id?: string; question: string; options: string[]; correct_index: number; explanation: string; time_limit_sec: number; position: number };
+
+function AdminPage() {
+  const { user, ready, isAdmin } = useAuth();
+  const qc = useQueryClient();
+  const [episodeId, setEpisodeId] = useState("");
+  const [draft, setDraft] = useState<Q[]>([]);
+
+  const { data: episodes = [] } = useQuery({
+    queryKey: ["admin-episodes"],
+    enabled: isAdmin,
+    queryFn: async () => (await supabase.from("episodes").select("id, number, title, series:series_id(title)").order("series_id").order("number")).data ?? [],
+  });
+  const { data: questions } = useQuery({
+    queryKey: ["admin-quiz", episodeId],
+    enabled: isAdmin && !!episodeId,
+    queryFn: async () => ((await supabase.from("quiz_questions").select("id, question, options, correct_index, explanation, time_limit_sec, position").eq("episode_id", episodeId).order("position")).data ?? []) as Q[],
+  });
+  useEffect(() => { if (questions) setDraft(questions.map((q) => ({ ...q, options: [0, 1, 2, 3].map((k) => q.options[k] ?? "") }))); }, [questions]);
+
+  if (ready && !user) return <Page><NeedLogin /></Page>;
+  if (ready && !isAdmin) return <Page><p className="text-center text-muted-foreground">Halaman ini khusus admin.</p></Page>;
+
+  const update = (i: number, patch: Partial<Q>) => setDraft((d) => d.map((q, k) => (k === i ? { ...q, ...patch } : q)));
+
+  async function ensureQuiz() {
+    const ep = episodes.find((e) => e.id === episodeId);
+    const { data, error } = await supabase.from("quizzes").upsert({ episode_id: episodeId, title: `Kuis Seru: ${ep?.title ?? ""}` }, { onConflict: "episode_id" }).select("id").single();
+    if (error) throw error;
+    return data.id;
+  }
+
+  async function saveQ(i: number) {
+    const q = draft[i];
+    if (!q) return;
+    if (!q.question.trim() || q.options.some((o) => !o.trim())) { toast.error("Isi pertanyaan dan keempat pilihan."); return; }
+    try {
+      const quiz_id = await ensureQuiz();
+      const row = { episode_id: episodeId, quiz_id, question: q.question.trim(), options: q.options.map((o) => o.trim()), correct_index: q.correct_index, explanation: q.explanation.trim(), time_limit_sec: q.time_limit_sec || 20, position: q.position };
+      const { error } = q.id ? await supabase.from("quiz_questions").update(row).eq("id", q.id) : await supabase.from("quiz_questions").insert(row);
+      if (error) throw error;
+      toast.success("Soal tersimpan");
+      qc.invalidateQueries({ queryKey: ["admin-quiz", episodeId] });
+      qc.invalidateQueries({ queryKey: ["quiz", episodeId] });
+    } catch (e) { toast.error((e as Error).message); }
+  }
+
+  async function removeQ(i: number) {
+    const q = draft[i];
+    if (!q) return;
+    if (q.id) {
+      const { error } = await supabase.from("quiz_questions").delete().eq("id", q.id);
+      if (error) { toast.error(error.message); return; }
+      qc.invalidateQueries({ queryKey: ["admin-quiz", episodeId] });
+    } else setDraft((d) => d.filter((_, k) => k !== i));
+  }
+
+  return (
+    <Page className="space-y-6">
+      <h1 className="text-3xl font-extrabold">Dasbor Admin</h1>
+      <section className="rounded-3xl bg-card p-5 shadow-card">
+        <h2 className="text-xl font-bold">Soal Kuis Seru</h2>
+        <label className="mt-3 block text-sm font-semibold" htmlFor="ep">Pilih episode</label>
+        <select id="ep" value={episodeId} onChange={(e) => setEpisodeId(e.target.value)} className="mt-1 h-10 w-full rounded-md border bg-card px-3 text-sm">
+          <option value="">— pilih —</option>
+          {episodes.map((e) => (
+            <option key={e.id} value={e.id}>{(e.series as unknown as { title: string } | null)?.title} · Ep {e.number}: {e.title}</option>
+          ))}
+        </select>
+      </section>
+
+      {episodeId && (
+        <section className="space-y-4">
+          {draft.map((q, i) => (
+            <div key={q.id ?? `new-${i}`} className="rounded-3xl bg-card p-5 shadow-card">
+              <div className="flex items-center gap-2">
+                <span className="font-bold">Soal</span>
+                <Input type="number" className="w-20" value={q.position} onChange={(e) => update(i, { position: Number(e.target.value) })} aria-label="Urutan" />
+                <span className="ml-auto text-sm">Waktu (detik)</span>
+                <Input type="number" className="w-20" value={q.time_limit_sec} onChange={(e) => update(i, { time_limit_sec: Number(e.target.value) })} aria-label="Batas waktu" />
+              </div>
+              <Input className="mt-3" placeholder="Pertanyaan" value={q.question} onChange={(e) => update(i, { question: e.target.value })} />
+              <div className="mt-3 grid gap-2 sm:grid-cols-2">
+                {q.options.map((o, k) => (
+                  <label key={k} className="flex items-center gap-2">
+                    <input type="radio" name={`correct-${i}`} checked={q.correct_index === k} onChange={() => update(i, { correct_index: k })} aria-label={`Pilihan ${k + 1} benar`} />
+                    <Input placeholder={`Pilihan ${k + 1}`} value={o} onChange={(e) => update(i, { options: q.options.map((x, j) => (j === k ? e.target.value : x)) })} />
+                  </label>
+                ))}
+              </div>
+              <p className="mt-1 text-xs text-muted-foreground">Tandai bulatan di pilihan yang benar.</p>
+              <Input className="mt-3" placeholder="Penjelasan satu kalimat" value={q.explanation} onChange={(e) => update(i, { explanation: e.target.value })} />
+              <div className="mt-3 flex gap-2">
+                <Button variant="navy" onClick={() => saveQ(i)}><Save /> Simpan</Button>
+                <Button variant="outline" onClick={() => removeQ(i)}><Trash2 /> Hapus</Button>
+              </div>
+            </div>
+          ))}
+          <Button variant="hero" onClick={() => setDraft((d) => [...d, { question: "", options: ["", "", "", ""], correct_index: 0, explanation: "", time_limit_sec: 20, position: d.length + 1 }])}>
+            <Plus /> Tambah Soal
+          </Button>
+        </section>
+      )}
+    </Page>
+  );
+}
