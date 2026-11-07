@@ -8,3 +8,5 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Manual comic creation lives in the admin ContentManager, uses the existing series schema and RLS-protected browser client, and selects the saved series for episode and image management; this keeps all content entry in one place without duplicating storage.

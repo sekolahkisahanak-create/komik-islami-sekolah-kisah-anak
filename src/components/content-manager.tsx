@@ -6,6 +6,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { ComicCreateForm } from "@/components/comic-create-form";
 
 const BUCKET = "comic-pages";
 
@@ -63,6 +64,12 @@ export function ContentManager() {
     qc.invalidateQueries({ queryKey: ["cm-episodes", seriesId] });
     qc.invalidateQueries({ queryKey: ["cm-pages", episodeId] });
     qc.invalidateQueries({ queryKey: ["cm-series"] });
+    qc.invalidateQueries({ queryKey: ["catalog"] });
+    qc.invalidateQueries({ queryKey: ["featured"] });
+    qc.invalidateQueries({ queryKey: ["latest-episodes"] });
+    qc.invalidateQueries({ queryKey: ["series"] });
+    qc.invalidateQueries({ queryKey: ["episodes"] });
+    qc.invalidateQueries({ queryKey: ["admin-episodes"] });
   };
 
   async function createEpisode() {
@@ -186,8 +193,9 @@ export function ContentManager() {
   }
 
   return (
-    <section className="space-y-4 rounded-3xl bg-card p-5 shadow-card">
+    <section className="space-y-4">
       <h2 className="text-xl font-bold">Kelola Konten Komik</h2>
+      <ComicCreateForm onCreated={(id) => { setSeriesId(id); setEpisodeId(""); setForm({}); inv(); }} />
 
       <div className="grid gap-3 sm:grid-cols-2">
         <div>
@@ -220,7 +228,7 @@ export function ContentManager() {
 
       {seriesId && (
         <div className="flex flex-wrap items-end gap-2">
-          <div className="min-w-56 flex-1">
+          <div className="min-w-0 flex-1 basis-56">
             <label className="block text-sm font-semibold" htmlFor="cm-new">Episode baru</label>
             <Input id="cm-new" placeholder="Judul episode baru" value={newTitle} onChange={(e) => setNewTitle(e.target.value)} />
           </div>
