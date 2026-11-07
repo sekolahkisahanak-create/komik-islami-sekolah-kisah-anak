@@ -1,1 +1,289 @@
-aW1wb3J0IHsgdXNlUXVlcnksIHVzZVF1ZXJ5Q2xpZW50IH0gZnJvbSAiQHRhbnN0YWNrL3JlYWN0LXF1ZXJ5IjsKaW1wb3J0IHsgdXNlRWZmZWN0LCB1c2VSZWYsIHVzZVN0YXRlIH0gZnJvbSAicmVhY3QiOwppbXBvcnQgeyBBcnJvd0Rvd24sIEFycm93VXAsIEltYWdlIGFzIEltYWdlSWNvbiwgUGx1cywgU2F2ZSwgVHJhc2gyLCBVcGxvYWQgfSBmcm9tICJsdWNpZGUtcmVhY3QiOwppbXBvcnQgeyB0b2FzdCB9IGZyb20gInNvbm5lciI7CmltcG9ydCB7IHN1cGFiYXNlIH0gZnJvbSAiQC9pbnRlZ3JhdGlvbnMvc3VwYWJhc2UvY2xpZW50IjsKaW1wb3J0IHsgQnV0dG9uIH0gZnJvbSAiQC9jb21wb25lbnRzL3VpL2J1dHRvbiI7CmltcG9ydCB7IElucHV0IH0gZnJvbSAiQC9jb21wb25lbnRzL3VpL2lucHV0IjsKaW1wb3J0IHsgVGV4dGFyZWEgfSBmcm9tICJAL2NvbXBvbmVudHMvdWkvdGV4dGFyZWEiOwoKY29uc3QgQlVDS0VUID0gImNvbWljLXBhZ2VzIjsKCmZ1bmN0aW9uIHN0b3JhZ2VQYXRoRnJvbVVybCh1cmw6IHN0cmluZyk6IHN0cmluZyB8IG51bGwgewogIGNvbnN0IG1hcmtlciA9IGAvJHtCVUNLRVR9L2A7CiAgY29uc3QgaSA9IHVybC5pbmRleE9mKG1hcmtlcik7CiAgcmV0dXJuIGkgPj0gMCA/IGRlY29kZVVSSUNvbXBvbmVudCh1cmwuc2xpY2UoaSArIG1hcmtlci5sZW5ndGgpKSA6IG51bGw7Cn0KCmFzeW5jIGZ1bmN0aW9uIHVwbG9hZEltYWdlKGZpbGU6IEZpbGUsIHBhdGg6IHN0cmluZyk6IFByb21pc2U8c3RyaW5nPiB7CiAgY29uc3QgeyBlcnJvciB9ID0gYXdhaXQgc3VwYWJhc2Uuc3RvcmFnZS5mcm9tKEJVQ0tFVCkudXBsb2FkKHBhdGgsIGZpbGUsIHsgdXBzZXJ0OiB0cnVlLCBjb250ZW50VHlwZTogZmlsZS50eXBlIHx8ICJpbWFnZS9qcGVnIiB9KTsKICBpZiAoZXJyb3IpIHRocm93IGVycm9yOwogIGNvbnN0IHsgZGF0YSB9ID0gc3VwYWJhc2Uuc3RvcmFnZS5mcm9tKEJVQ0tFVCkuZ2V0UHVibGljVXJsKHBhdGgpOwogIHJldHVybiBkYXRhLnB1YmxpY1VybDsKfQoKLyogPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09IEtFTE9MQSBLT05URU4gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09ICovCgp0eXBlIFNyID0geyBpZDogc3RyaW5nOyB0aXRsZTogc3RyaW5nOyBzbHVnOiBzdHJpbmc7IGNvdmVyX3VybDogc3RyaW5nIHwgbnVsbCB9Owp0eXBlIEVwID0geyBpZDogc3RyaW5nOyBzZXJpZXNfaWQ6IHN0cmluZzsgbnVtYmVyOiBudW1iZXI7IHRpdGxlOiBzdHJpbmc7IHN5bm9wc2lzOiBzdHJpbmcgfCBudWxsOyBpc19wcmVtaXVtOiBib29sZWFuOyBwdWJsaXNoZWQ6IGJvb2xlYW47IGlicmFoOiBzdHJpbmdbXSB8IG51bGw7IGRpc2N1c3Npb25fcXVlc3Rpb246IHN0cmluZyB8IG51bGwgfTsKdHlwZSBQZyA9IHsgaWQ6IHN0cmluZzsgZXBpc29kZV9pZDogc3RyaW5nOyBwb3NpdGlvbjogbnVtYmVyOyBpbWFnZV91cmw6IHN0cmluZyB9OwoKZXhwb3J0IGZ1bmN0aW9uIENvbnRlbnRNYW5hZ2VyKCkgewogIGNvbnN0IHFjID0gdXNlUXVlcnlDbGllbnQoKTsKICBjb25zdCBbc2VyaWVzSWQsIHNldFNlcmllc0lkXSA9IHVzZVN0YXRlKCIiKTsKICBjb25zdCBbZXBpc29kZUlkLCBzZXRFcGlzb2RlSWRdID0gdXNlU3RhdGUoIiIpOwogIGNvbnN0IFtmb3JtLCBzZXRGb3JtXSA9IHVzZVN0YXRlPFBhcnRpYWw8RXA+Pih7fSk7CiAgY29uc3QgW25ld1RpdGxlLCBzZXROZXdUaXRsZV0gPSB1c2VTdGF0ZSgiIik7CiAgY29uc3QgW2J1c3ksIHNldEJ1c3ldID0gdXNlU3RhdGUoIiIpOwogIGNvbnN0IGZpbGVSZWYgPSB1c2VSZWY8SFRNTElucHV0RWxlbWVudD4obnVsbCk7CiAgY29uc3QgcmVwbGFjZVJlZiA9IHVzZVJlZjxIVE1MSW5wdXRFbGVtZW50PihudWxsKTsKICBjb25zdCByZXBsYWNlVGFyZ2V0ID0gdXNlUmVmPFBnIHwgbnVsbD4obnVsbCk7CiAgY29uc3QgY292ZXJSZWYgPSB1c2VSZWY8SFRNTElucHV0RWxlbWVudD4obnVsbCk7CgogIGNvbnN0IHsgZGF0YTogc2VyaWVzTGlzdCA9IFtdIH0gPSB1c2VRdWVyeSh7CiAgICBxdWVyeUtleTogWyJjbS1zZXJpZXMiXSwKICAgIHF1ZXJ5Rm46IGFzeW5jICgpID0+ICgoYXdhaXQgc3VwYWJhc2UuZnJvbSgic2VyaWVzIikuc2VsZWN0KCJpZCwgdGl0bGUsIHNsdWcsIGNvdmVyX3VybCIpLm9yZGVyKCJ0aXRsZSIpKS5kYXRhID8/IFtdKSBhcyBTcltdLAogIH0pOwogIGNvbnN0IHsgZGF0YTogZXBpc29kZXMgPSBbXSB9ID0gdXNlUXVlcnkoewogICAgcXVlcnlLZXk6IFsiY20tZXBpc29kZXMiLCBzZXJpZXNJZF0sCiAgICBlbmFibGVkOiAhIXNlcmllc0lkLAogICAgcXVlcnlGbjogYXN5bmMgKCkgPT4gKChhd2FpdCBzdXBhYmFzZS5mcm9tKCJlcGlzb2RlcyIpLnNlbGVjdCgiaWQsIHNlcmllc19pZCwgbnVtYmVyLCB0aXRsZSwgc3lub3BzaXMsIGlzX3ByZW1pdW0sIHB1Ymxpc2hlZCwgaWJyYWgsIGRpc2N1c3Npb25fcXVlc3Rpb24iKS5lcSgic2VyaWVzX2lkIiwgc2VyaWVzSWQpLm9yZGVyKCJudW1iZXIiKSkuZGF0YSA/PyBbXSkgYXMgRXBbXSwKICB9KTsKICBjb25zdCB7IGRhdGE6IHBhZ2VzID0gW10gfSA9IHVzZVF1ZXJ5KHsKICAgIHF1ZXJ5S2V5OiBbImNtLXBhZ2VzIiwgZXBpc29kZUlkXSwKICAgIGVuYWJsZWQ6ICEhZXBpc29kZUlkLAogICAgcXVlcnlGbjogYXN5bmMgKCkgPT4gKChhd2FpdCBzdXBhYmFzZS5mcm9tKCJlcGlzb2RlX3BhZ2VzIikuc2VsZWN0KCJpZCwgZXBpc29kZV9pZCwgcG9zaXRpb24sIGltYWdlX3VybCIpLmVxKCJlcGlzb2RlX2lkIiwgZXBpc29kZUlkKS5vcmRlcigicG9zaXRpb24iKSkuZGF0YSA/PyBbXSkgYXMgUGdbXSwKICB9KTsKCiAgY29uc3Qgc2VyaWVzID0gc2VyaWVzTGlzdC5maW5kKChzKSA9PiBzLmlkID09PSBzZXJpZXNJZCkgPz8gbnVsbDsKICBjb25zdCBlcGlzb2RlID0gZXBpc29kZXMuZmluZCgoZSkgPT4gZS5pZCA9PT0gZXBpc29kZUlkKSA/PyBudWxsOwogIHVzZUVmZmVjdCgoKSA9PiB7IGlmIChlcGlzb2RlKSBzZXRGb3JtKHsgLi4uZXBpc29kZSB9KTsgfSwgW2VwaXNvZGVJZCwgZXBpc29kZXNdKTsKCiAgY29uc3QgaW52ID0gKCkgPT4gewogICAgcWMuaW52YWxpZGF0ZVF1ZXJpZXMoeyBxdWVyeUtleTogWyJjbS1lcGlzb2RlcyIsIHNlcmllc0lkXSB9KTsKICAgIHFjLmludmFsaWRhdGVRdWVyaWVzKHsgcXVlcnlLZXk6IFsiY20tcGFnZXMiLCBlcGlzb2RlSWRdIH0pOwogICAgcWMuaW52YWxpZGF0ZVF1ZXJpZXMoeyBxdWVyeUtleTogWyJjbS1zZXJpZXMiXSB9KTsKICB9OwoKICBhc3luYyBmdW5jdGlvbiBjcmVhdGVFcGlzb2RlKCkgewogICAgaWYgKCFzZXJpZXNJZCB8fCAhbmV3VGl0bGUudHJpbSgpKSB7IHRvYXN0LmVycm9yKCJQaWxpaCBzZXJpIGRhbiBpc2kganVkdWwgZXBpc29kZS4iKTsgcmV0dXJuOyB9CiAgICBjb25zdCBudW1iZXIgPSAoZXBpc29kZXMucmVkdWNlKChtLCBlKSA9PiBNYXRoLm1heChtLCBlLm51bWJlciksIDApIHx8IDApICsgMTsKICAgIGNvbnN0IHsgZGF0YSwgZXJyb3IgfSA9IGF3YWl0IHN1cGFiYXNlLmZyb20oImVwaXNvZGVzIikuaW5zZXJ0KHsgc2VyaWVzX2lkOiBzZXJpZXNJZCwgbnVtYmVyLCB0aXRsZTogbmV3VGl0bGUudHJpbSgpLCBwdWJsaXNoZWQ6IGZhbHNlLCBpc19wcmVtaXVtOiBmYWxzZSB9KS5zZWxlY3QoImlkIikuc2luZ2xlKCk7CiAgICBpZiAoZXJyb3IpIHsgdG9hc3QuZXJyb3IoZXJyb3IubWVzc2FnZSk7IHJldHVybjsgfQogICAgc2V0TmV3VGl0bGUoIiIpOwogICAgdG9hc3Quc3VjY2VzcyhgRXBpc29kZSAke251bWJlcn0gZGlidWF0IChtYXNpaCBkcmFmKS5gKTsKICAgIGludigpOwogICAgaWYgKGRhdGEpIHNldEVwaXNvZGVJZChkYXRhLmlkKTsKICB9CgogIGFzeW5jIGZ1bmN0aW9uIHNhdmVFcGlzb2RlKCkgewogICAgaWYgKCFlcGlzb2RlKSByZXR1cm47CiAgICBjb25zdCByb3cgPSB7CiAgICAgIG51bWJlcjogTnVtYmVyKGZvcm0ubnVtYmVyID8/IGVwaXNvZGUubnVtYmVyKSwKICAgICAgdGl0bGU6IChmb3JtLnRpdGxlID8/ICIiKS50cmltKCksCiAgICAgIHN5bm9wc2lzOiBmb3JtLnN5bm9wc2lzID8/ICIiLAogICAgICBpYnJhaDogZm9ybS5pYnJhaCA/PyBbXSwKICAgICAgZGlzY3Vzc2lvbl9xdWVzdGlvbjogZm9ybS5kaXNjdXNzaW9uX3F1ZXN0aW9uID8/ICIiLAogICAgICBpc19wcmVtaXVtOiAhIWZvcm0uaXNfcHJlbWl1bSwKICAgICAgcHVibGlzaGVkOiAhIWZvcm0ucHVibGlzaGVkLAogICAgfTsKICAgIGlmICghcm93LnRpdGxlKSB7IHRvYXN0LmVycm9yKCJKdWR1bCB0aWRhayBib2xlaCBrb3NvbmcuIik7IHJldHVybjsgfQogICAgY29uc3QgeyBlcnJvciB9ID0gYXdhaXQgc3VwYWJhc2UuZnJvbSgiZXBpc29kZXMiKS51cGRhdGUocm93KS5lcSgiaWQiLCBlcGlzb2RlLmlkKTsKICAgIGlmIChlcnJvcikgeyB0b2FzdC5lcnJvcihlcnJvci5tZXNzYWdlKTsgcmV0dXJuOyB9CiAgICB0b2FzdC5zdWNjZXNzKCJFcGlzb2RlIHRlcnNpbXBhbiIpOwogICAgaW52KCk7CiAgfQoKICBhc3luYyBmdW5jdGlvbiBkZWxldGVFcGlzb2RlKCkgewogICAgaWYgKCFlcGlzb2RlKSByZXR1cm47CiAgICBpZiAoIXdpbmRvdy5jb25maXJtKGBIYXB1cyBlcGlzb2RlICIke2VwaXNvZGUudGl0bGV9IiBiZXNlcnRhIHNlbXVhIGhhbGFtYW5ueWE/YCkpIHJldHVybjsKICAgIGZvciAoY29uc3QgcCBvZiBwYWdlcykgewogICAgICBjb25zdCBwYXRoID0gc3RvcmFnZVBhdGhGcm9tVXJsKHAuaW1hZ2VfdXJsKTsKICAgICAgaWYgKHBhdGgpIGF3YWl0IHN1cGFiYXNlLnN0b3JhZ2UuZnJvbShCVUNLRVQpLnJlbW92ZShbcGF0aF0pOwogICAgfQogICAgY29uc3QgeyBlcnJvciB9ID0gYXdhaXQgc3VwYWJhc2UuZnJvbSgiZXBpc29kZXMiKS5kZWxldGUoKS5lcSgiaWQiLCBlcGlzb2RlLmlkKTsKICAgIGlmIChlcnJvcikgeyB0b2FzdC5lcnJvcihlcnJvci5tZXNzYWdlKTsgcmV0dXJuOyB9CiAgICBzZXRFcGlzb2RlSWQoIiIpOwogICAgdG9hc3Quc3VjY2VzcygiRXBpc29kZSBkaWhhcHVzIik7CiAgICBpbnYoKTsKICB9CgogIGFzeW5jIGZ1bmN0aW9uIHVwbG9hZFBhZ2VzKGZpbGVzOiBGaWxlTGlzdCB8IG51bGwpIHsKICAgIGlmICghZmlsZXMgfHwgIWVwaXNvZGUpIHJldHVybjsKICAgIGNvbnN0IGxpc3QgPSBBcnJheS5mcm9tKGZpbGVzKS5maWx0ZXIoKGYpID0+IGYudHlwZS5zdGFydHNXaXRoKCJpbWFnZS8iKSkuc29ydCgoYSwgYikgPT4gYS5uYW1lLmxvY2FsZUNvbXBhcmUoYi5uYW1lLCB1bmRlZmluZWQsIHsgbnVtZXJpYzogdHJ1ZSB9KSk7CiAgICBpZiAoIWxpc3QubGVuZ3RoKSB7IHRvYXN0LmVycm9yKCJUaWRhayBhZGEgYmVya2FzIGdhbWJhci4iKTsgcmV0dXJuOyB9CiAgICBsZXQgcG9zID0gcGFnZXMucmVkdWNlKChtLCBwKSA9PiBNYXRoLm1heChtLCBwLnBvc2l0aW9uKSwgMCk7CiAgICBsZXQgb2sgPSAwOwogICAgZm9yIChjb25zdCBbaSwgZl0gb2YgbGlzdC5lbnRyaWVzKCkpIHsKICAgICAgc2V0QnVzeShgTWVuZ3VuZ2dhaCAke2kgKyAxfSBkYXJpICR7bGlzdC5sZW5ndGh9OiAke2YubmFtZX1gKTsKICAgICAgdHJ5IHsKICAgICAgICBwb3MgKz0gMTsKICAgICAgICBjb25zdCBleHQgPSAoZi5uYW1lLnNwbGl0KCIuIikucG9wKCkgfHwgImpwZyIpLnRvTG93ZXJDYXNlKCk7CiAgICAgICAgY29uc3QgdXJsID0gYXdhaXQgdXBsb2FkSW1hZ2UoZiwgYCR7ZXBpc29kZS5pZH0vJHtTdHJpbmcocG9zKS5wYWRTdGFydCgzLCAiMCIpfS0ke0RhdGUubm93KCl9LiR7ZXh0fWApOwogICAgICAgIGNvbnN0IHsgZXJyb3IgfSA9IGF3YWl0IHN1cGFiYXNlLmZyb20oImVwaXNvZGVfcGFnZXMiKS5pbnNlcnQoeyBlcGlzb2RlX2lkOiBlcGlzb2RlLmlkLCBwb3NpdGlvbjogcG9zLCBpbWFnZV91cmw6IHVybCB9KTsKICAgICAgICBpZiAoZXJyb3IpIHRocm93IGVycm9yOwogICAgICAgIG9rICs9IDE7CiAgICAgIH0gY2F0Y2ggKGUpIHsgdG9hc3QuZXJyb3IoYCR7Zi5uYW1lfTogJHsoZSBhcyBFcnJvcikubWVzc2FnZX1gKTsgcG9zIC09IDE7IH0KICAgIH0KICAgIHNldEJ1c3koIiIpOwogICAgdG9hc3Quc3VjY2VzcyhgJHtva30gaGFsYW1hbiB0ZXJ1bmdnYWguYCk7CiAgICBpbnYoKTsKICAgIGlmIChmaWxlUmVmLmN1cnJlbnQpIGZpbGVSZWYuY3VycmVudC52YWx1ZSA9ICIiOwogIH0KCiAgYXN5bmMgZnVuY3Rpb24gbW92ZVBhZ2UocDogUGcsIGRpcjogMSB8IC0xKSB7CiAgICBjb25zdCBpZHggPSBwYWdlcy5maW5kSW5kZXgoKHgpID0+IHguaWQgPT09IHAuaWQpOwogICAgY29uc3Qgb3RoZXIgPSBwYWdlc1tpZHggKyBkaXJdOwogICAgaWYgKCFvdGhlcikgcmV0dXJuOwogICAgYXdhaXQgc3VwYWJhc2UuZnJvbSgiZXBpc29kZV9wYWdlcyIpLnVwZGF0ZSh7IHBvc2l0aW9uOiBvdGhlci5wb3NpdGlvbiB9KS5lcSgiaWQiLCBwLmlkKTsKICAgIGF3YWl0IHN1cGFiYXNlLmZyb20oImVwaXNvZGVfcGFnZXMiKS51cGRhdGUoeyBwb3NpdGlvbjogcC5wb3NpdGlvbiB9KS5lcSgiaWQiLCBvdGhlci5pZCk7CiAgICBpbnYoKTsKICB9CgogIGFzeW5jIGZ1bmN0aW9uIGRlbGV0ZVBhZ2UocDogUGcpIHsKICAgIGlmICghd2luZG93LmNvbmZpcm0oYEhhcHVzIGhhbGFtYW4gJHtwLnBvc2l0aW9ufT9gKSkgcmV0dXJuOwogICAgY29uc3QgcGF0aCA9IHN0b3JhZ2VQYXRoRnJvbVVybChwLmltYWdlX3VybCk7CiAgICBpZiAocGF0aCkgYXdhaXQgc3VwYWJhc2Uuc3RvcmFnZS5mcm9tKEJVQ0tFVCkucmVtb3ZlKFtwYXRoXSk7CiAgICBjb25zdCB7IGVycm9yIH0gPSBhd2FpdCBzdXBhYmFzZS5mcm9tKCJlcGlzb2RlX3BhZ2VzIikuZGVsZXRlKCkuZXEoImlkIiwgcC5pZCk7CiAgICBpZiAoZXJyb3IpIHsgdG9hc3QuZXJyb3IoZXJyb3IubWVzc2FnZSk7IHJldHVybjsgfQogICAgdG9hc3Quc3VjY2VzcygiSGFsYW1hbiBkaWhhcHVzIik7CiAgICBpbnYoKTsKICB9CgogIGFzeW5jIGZ1bmN0aW9uIHJlcGxhY2VQYWdlKGZpbGVzOiBGaWxlTGlzdCB8IG51bGwpIHsKICAgIGNvbnN0IHAgPSByZXBsYWNlVGFyZ2V0LmN1cnJlbnQ7CiAgICBpZiAoIWZpbGVzIHx8ICFmaWxlc1swXSB8fCAhcCkgcmV0dXJuOwogICAgc2V0QnVzeSgiTWVuZ2dhbnRpIGhhbGFtYW7igKYiKTsKICAgIHRyeSB7CiAgICAgIGNvbnN0IGYgPSBmaWxlc1swXTsKICAgICAgY29uc3QgZXh0ID0gKGYubmFtZS5zcGxpdCgiLiIpLnBvcCgpIHx8ICJqcGciKS50b0xvd2VyQ2FzZSgpOwogICAgICBjb25zdCB1cmwgPSBhd2FpdCB1cGxvYWRJbWFnZShmLCBgJHtwLmVwaXNvZGVfaWR9LyR7U3RyaW5nKHAucG9zaXRpb24pLnBhZFN0YXJ0KDMsICIwIil9LWdhbnRpLSR7RGF0ZS5ub3coKX0uJHtleHR9YCk7CiAgICAgIGNvbnN0IHsgZXJyb3IgfSA9IGF3YWl0IHN1cGFiYXNlLmZyb20oImVwaXNvZGVfcGFnZXMiKS51cGRhdGUoeyBpbWFnZV91cmw6IHVybCB9KS5lcSgiaWQiLCBwLmlkKTsKICAgICAgaWYgKGVycm9yKSB0aHJvdyBlcnJvcjsKICAgICAgY29uc3Qgb2xkID0gc3RvcmFnZVBhdGhGcm9tVXJsKHAuaW1hZ2VfdXJsKTsKICAgICAgaWYgKG9sZCkgYXdhaXQgc3VwYWJhc2Uuc3RvcmFnZS5mcm9tKEJVQ0tFVCkucmVtb3ZlKFtvbGRdKTsKICAgICAgdG9hc3Quc3VjY2VzcygiSGFsYW1hbiBkaWdhbnRpIik7CiAgICAgIGludigpOwogICAgfSBjYXRjaCAoZSkgeyB0b2FzdC5lcnJvcigoZSBhcyBFcnJvcikubWVzc2FnZSk7IH0KICAgIHNldEJ1c3koIiIpOwogICAgaWYgKHJlcGxhY2VSZWYuY3VycmVudCkgcmVwbGFjZVJlZi5jdXJyZW50LnZhbHVlID0gIiI7CiAgfQoKICBhc3luYyBmdW5jdGlvbiB1cGxvYWRDb3ZlcihmaWxlczogRmlsZUxpc3QgfCBudWxsKSB7CiAgICBpZiAoIWZpbGVzIHx8ICFmaWxlc1swXSB8fCAhc2VyaWVzKSByZXR1cm47CiAgICBzZXRCdXN5KCJNZW5ndW5nZ2FoIGNvdmVy4oCmIik7CiAgICB0cnkgewogICAgICBjb25zdCBmID0gZmlsZXNbMF07CiAgICAgIGNvbnN0IGV4dCA9IChmLm5hbWUuc3BsaXQoIi4iKS5wb3AoKSB8fCAianBnIikudG9Mb3dlckNhc2UoKTsKICAgICAgY29uc3QgdXJsID0gYXdhaXQgdXBsb2FkSW1hZ2UoZiwgYGNvdmVycy8ke3Nlcmllcy5pZH0tJHtEYXRlLm5vdygpfS4ke2V4dH1gKTsKICAgICAgY29uc3QgeyBlcnJvciB9ID0gYXdhaXQgc3VwYWJhc2UuZnJvbSgic2VyaWVzIikudXBkYXRlKHsgY292ZXJfdXJsOiB1cmwgfSkuZXEoImlkIiwgc2VyaWVzLmlkKTsKICAgICAgaWYgKGVycm9yKSB0aHJvdyBlcnJvcjsKICAgICAgdG9hc3Quc3VjY2VzcygiQ292ZXIgc2VyaSBkaXBlcmJhcnVpIik7CiAgICAgIGludigpOwogICAgfSBjYXRjaCAoZSkgeyB0b2FzdC5lcnJvcigoZSBhcyBFcnJvcikubWVzc2FnZSk7IH0KICAgIHNldEJ1c3koIiIpOwogICAgaWYgKGNvdmVyUmVmLmN1cnJlbnQpIGNvdmVyUmVmLmN1cnJlbnQudmFsdWUgPSAiIjsKICB9CgogIHJldHVybiAoCiAgICA8c2VjdGlvbiBjbGFzc05hbWU9InNwYWNlLXktNCByb3VuZGVkLTN4bCBiZy1jYXJkIHAtNSBzaGFkb3ctY2FyZCI+CiAgICAgIDxoMiBjbGFzc05hbWU9InRleHQteGwgZm9udC1ib2xkIj5LZWxvbGEgS29udGVuIEtvbWlrPC9oMj4KCiAgICAgIDxkaXYgY2xhc3NOYW1lPSJncmlkIGdhcC0zIHNtOmdyaWQtY29scy0yIj4KICAgICAgICA8ZGl2PgogICAgICAgICAgPGxhYmVsIGNsYXNzTmFtZT0iYmxvY2sgdGV4dC1zbSBmb250LXNlbWlib2xkIiBodG1sRm9yPSJjbS1zZXJpZXMiPlBpbGloIHNlcmk8L2xhYmVsPgogICAgICAgICAgPHNlbGVjdCBpZD0iY20tc2VyaWVzIiB2YWx1ZT17c2VyaWVzSWR9IG9uQ2hhbmdlPXsoZSkgPT4geyBzZXRTZXJpZXNJZChlLnRhcmdldC52YWx1ZSk7IHNldEVwaXNvZGVJZCgiIik7IH19IGNsYXNzTmFtZT0ibXQtMSBoLTEwIHctZnVsbCByb3VuZGVkLW1kIGJvcmRlciBiZy1jYXJkIHB4LTMgdGV4dC1zbSI+CiAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IiI+4oCUIHBpbGloIOKAlDwvb3B0aW9uPgogICAgICAgICAgICB7c2VyaWVzTGlzdC5tYXAoKHMpID0+IDxvcHRpb24ga2V5PXtzLmlkfSB2YWx1ZT17cy5pZH0+e3MudGl0bGV9PC9vcHRpb24+KX0KICAgICAgICAgIDwvc2VsZWN0PgogICAgICAgIDwvZGl2PgogICAgICAgIDxkaXY+CiAgICAgICAgICA8bGFiZWwgY2xhc3NOYW1lPSJibG9jayB0ZXh0LXNtIGZvbnQtc2VtaWJvbGQiIGh0bWxGb3I9ImNtLWVwaXNvZGUiPlBpbGloIGVwaXNvZGU8L2xhYmVsPgogICAgICAgICAgPHNlbGVjdCBpZD0iY20tZXBpc29kZSIgdmFsdWU9e2VwaXNvZGVJZH0gb25DaGFuZ2U9eyhlKSA9PiBzZXRFcGlzb2RlSWQoZS50YXJnZXQudmFsdWUpfSBjbGFzc05hbWU9Im10LTEgaC0xMCB3LWZ1bGwgcm91bmRlZC1tZCBib3JkZXIgYmctY2FyZCBweC0zIHRleHQtc20iIGRpc2FibGVkPXshc2VyaWVzSWR9PgogICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSIiPuKAlCBwaWxpaCDigJQ8L29wdGlvbj4KICAgICAgICAgICAge2VwaXNvZGVzLm1hcCgoZSkgPT4gPG9wdGlvbiBrZXk9e2UuaWR9IHZhbHVlPXtlLmlkfT5FcCB7ZS5udW1iZXJ9OiB7ZS50aXRsZX17ZS5wdWJsaXNoZWQgPyAiIiA6ICIgKGRyYWYpIn08L29wdGlvbj4pfQogICAgICAgICAgPC9zZWxlY3Q+CiAgICAgICAgPC9kaXY+CiAgICAgIDwvZGl2PgoKICAgICAge3NlcmllcyAmJiAoCiAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggZmxleC13cmFwIGl0ZW1zLWNlbnRlciBnYXAtMyByb3VuZGVkLTJ4bCBib3JkZXIgcC0zIj4KICAgICAgICAgIHtzZXJpZXMuY292ZXJfdXJsID8gPGltZyBzcmM9e3Nlcmllcy5jb3Zlcl91cmx9IGFsdD17YENvdmVyICR7c2VyaWVzLnRpdGxlfWB9IGNsYXNzTmFtZT0iaC0xNiB3LTEyIHJvdW5kZWQgb2JqZWN0LWNvdmVyIiAvPiA6IDxkaXYgY2xhc3NOYW1lPSJmbGV4IGgtMTYgdy0xMiBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIgcm91bmRlZCBiZy1tdXRlZCB0ZXh0LXhzIj5Db3ZlcjwvZGl2Pn0KICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJ0ZXh0LXNtIj4KICAgICAgICAgICAgPHAgY2xhc3NOYW1lPSJmb250LXNlbWlib2xkIj57c2VyaWVzLnRpdGxlfTwvcD4KICAgICAgICAgICAgPHAgY2xhc3NOYW1lPSJ0ZXh0LW11dGVkLWZvcmVncm91bmQiPkNvdmVyIHNlcmk8L3A+CiAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIDxpbnB1dCByZWY9e2NvdmVyUmVmfSB0eXBlPSJmaWxlIiBhY2NlcHQ9ImltYWdlLyoiIGNsYXNzTmFtZT0iaGlkZGVuIiBvbkNoYW5nZT17KGUpID0+IHVwbG9hZENvdmVyKGUudGFyZ2V0LmZpbGVzKX0gLz4KICAgICAgICAgIDxCdXR0b24gdmFyaWFudD0ib3V0bGluZSIgb25DbGljaz17KCkgPT4gY292ZXJSZWYuY3VycmVudD8uY2xpY2soKX0+PEltYWdlSWNvbiAvPiBHYW50aSBDb3ZlcjwvQnV0dG9uPgogICAgICAgIDwvZGl2PgogICAgICApfQoKICAgICAge3Nlcmllc0lkICYmICgKICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBmbGV4LXdyYXAgaXRlbXMtZW5kIGdhcC0yIj4KICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJtaW4tdy01NiBmbGV4LTEiPgogICAgICAgICAgICA8bGFiZWwgY2xhc3NOYW1lPSJibG9jayB0ZXh0LXNtIGZvbnQtc2VtaWJvbGQiIGh0bWxGb3I9ImNtLW5ldyI+RXBpc29kZSBiYXJ1PC9sYWJlbD4KICAgICAgICAgICAgPElucHV0IGlkPSJjbS1uZXciIHBsYWNlaG9sZGVyPSJKdWR1bCBlcGlzb2RlIGJhcnUiIHZhbHVlPXtuZXdUaXRsZX0gb25DaGFuZ2U9eyhlKSA9PiBzZXROZXdUaXRsZShlLnRhcmdldC52YWx1ZSl9IC8+CiAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIDxCdXR0b24gdmFyaWFudD0ibmF2eSIgb25DbGljaz17Y3JlYXRlRXBpc29kZX0+PFBsdXMgLz4gQnVhdCBFcGlzb2RlIChEcmFmKTwvQnV0dG9uPgogICAgICAgIDwvZGl2PgogICAgICApfQoKICAgICAge2VwaXNvZGUgJiYgKAogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJzcGFjZS15LTMgcm91bmRlZC0yeGwgYm9yZGVyIHAtNCI+CiAgICAgICAgICA8aDMgY2xhc3NOYW1lPSJmb250LWJvbGQiPkRhdGEgRXBpc29kZTwvaDM+CiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZ3JpZCBnYXAtMyBzbTpncmlkLWNvbHMtWzEwMHB4XzFmcl0iPgogICAgICAgICAgICA8ZGl2PgogICAgICAgICAgICAgIDxsYWJlbCBjbGFzc05hbWU9ImJsb2NrIHRleHQtc20gZm9udC1zZW1pYm9sZCIgaHRtbEZvcj0iZi1udW1iZXIiPk5vbW9yPC9sYWJlbD4KICAgICAgICAgICAgICA8SW5wdXQgaWQ9ImYtbnVtYmVyIiB0eXBlPSJudW1iZXIiIHZhbHVlPXtmb3JtLm51bWJlciA/PyBlcGlzb2RlLm51bWJlcn0gb25DaGFuZ2U9eyhlKSA9PiBzZXRGb3JtKChmKSA9PiAoeyAuLi5mLCBudW1iZXI6IE51bWJlcihlLnRhcmdldC52YWx1ZSkgfSkpfSAvPgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgPGRpdj4KICAgICAgICAgICAgICA8bGFiZWwgY2xhc3NOYW1lPSJibG9jayB0ZXh0LXNtIGZvbnQtc2VtaWJvbGQiIGh0bWxGb3I9ImYtdGl0bGUiPkp1ZHVsPC9sYWJlbD4KICAgICAgICAgICAgICA8SW5wdXQgaWQ9ImYtdGl0bGUiIHZhbHVlPXtmb3JtLnRpdGxlID8/ICIifSBvbkNoYW5nZT17KGUpID0+IHNldEZvcm0oKGYpID0+ICh7IC4uLmYsIHRpdGxlOiBlLnRhcmdldC52YWx1ZSB9KSl9IC8+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgPC9kaXY+CiAgICAgICAgICA8ZGl2PgogICAgICAgICAgICA8bGFiZWwgY2xhc3NOYW1lPSJibG9jayB0ZXh0LXNtIGZvbnQtc2VtaWJvbGQiIGh0bWxGb3I9ImYtc3lub3BzaXMiPlNpbm9wc2lzPC9sYWJlbD4KICAgICAgICAgICAgPFRleHRhcmVhIGlkPSJmLXN5bm9wc2lzIiByb3dzPXsyfSB2YWx1ZT17Zm9ybS5zeW5vcHNpcyA/PyAiIn0gb25DaGFuZ2U9eyhlKSA9PiBzZXRGb3JtKChmKSA9PiAoeyAuLi5mLCBzeW5vcHNpczogZS50YXJnZXQudmFsdWUgfSkpfSAvPgogICAgICAgICAgPC9kaXY+CiAgICAgICAgICA8ZGl2PgogICAgICAgICAgICA8bGFiZWwgY2xhc3NOYW1lPSJibG9jayB0ZXh0LXNtIGZvbnQtc2VtaWJvbGQiIGh0bWxGb3I9ImYtaWJyYWgiPklicmFoIChzYXR1IHBlciBiYXJpcywgbWFrc2ltYWwgMyk8L2xhYmVsPgogICAgICAgICAgICA8VGV4dGFyZWEgaWQ9ImYtaWJyYWgiIHJvd3M9ezN9IHZhbHVlPXsoZm9ybS5pYnJhaCA/PyBbXSkuam9pbigiXG4iKX0gb25DaGFuZ2U9eyhlKSA9PiBzZXRGb3JtKChmKSA9PiAoeyAuLi5mLCBpYnJhaDogZS50YXJnZXQudmFsdWUuc3BsaXQoIlxuIikgfSkpfSAvPgogICAgICAgICAgPC9kaXY+CiAgICAgICAgICA8ZGl2PgogICAgICAgICAgICA8bGFiZWwgY2xhc3NOYW1lPSJibG9jayB0ZXh0LXNtIGZvbnQtc2VtaWJvbGQiIGh0bWxGb3I9ImYtZGlzY3Vzc2lvbiI+UGVydGFueWFhbiBkaXNrdXNpIG9yYW5nIHR1YeKAk2FuYWs8L2xhYmVsPgogICAgICAgICAgICA8SW5wdXQgaWQ9ImYtZGlzY3Vzc2lvbiIgdmFsdWU9e2Zvcm0uZGlzY3Vzc2lvbl9xdWVzdGlvbiA/PyAiIn0gb25DaGFuZ2U9eyhlKSA9PiBzZXRGb3JtKChmKSA9PiAoeyAuLi5mLCBkaXNjdXNzaW9uX3F1ZXN0aW9uOiBlLnRhcmdldC52YWx1ZSB9KSl9IC8+CiAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGZsZXgtd3JhcCBnYXAtNSB0ZXh0LXNtIj4KICAgICAgICAgICAgPGxhYmVsIGNsYXNzTmFtZT0iZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTIiPjxpbnB1dCB0eXBlPSJjaGVja2JveCIgY2hlY2tlZD17ISFmb3JtLmlzX3ByZW1pdW19IG9uQ2hhbmdlPXsoZSkgPT4gc2V0Rm9ybSgoZikgPT4gKHsgLi4uZiwgaXNfcHJlbWl1bTogZS50YXJnZXQuY2hlY2tlZCB9KSl9IC8+IFByZW1pdW0gKGJlcmJheWFyKTwvbGFiZWw+CiAgICAgICAgICAgIDxsYWJlbCBjbGFzc05hbWU9ImZsZXggaXRlbXMtY2VudGVyIGdhcC0yIj48aW5wdXQgdHlwZT0iY2hlY2tib3giIGNoZWNrZWQ9eyEhZm9ybS5wdWJsaXNoZWR9IG9uQ2hhbmdlPXsoZSkgPT4gc2V0Rm9ybSgoZikgPT4gKHsgLi4uZiwgcHVibGlzaGVkOiBlLnRhcmdldC5jaGVja2VkIH0pKX0gLz4gVGVyYml0a2FuIChwdWJsaXNoZWQpPC9sYWJlbD4KICAgICAgICAgIDwvZGl2PgogICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggZ2FwLTIiPgogICAgICAgICAgICA8QnV0dG9uIHZhcmlhbnQ9Im5hdnkiIG9uQ2xpY2s9e3NhdmVFcGlzb2RlfT48U2F2ZSAvPiBTaW1wYW4gRXBpc29kZTwvQnV0dG9uPgogICAgICAgICAgICA8QnV0dG9uIHZhcmlhbnQ9Im91dGxpbmUiIG9uQ2xpY2s9e2RlbGV0ZUVwaXNvZGV9PjxUcmFzaDIgLz4gSGFwdXMgRXBpc29kZTwvQnV0dG9uPgogICAgICAgICAgPC9kaXY+CgogICAgICAgICAgPGgzIGNsYXNzTmFtZT0icHQtMiBmb250LWJvbGQiPkhhbGFtYW4gS29taWsg4oCUIHtwYWdlcy5sZW5ndGh9IGhhbGFtYW48L2gzPgogICAgICAgICAgPGlucHV0IHJlZj17ZmlsZVJlZn0gdHlwZT0iZmlsZSIgYWNjZXB0PSJpbWFnZS8qIiBtdWx0aXBsZSBjbGFzc05hbWU9ImhpZGRlbiIgb25DaGFuZ2U9eyhlKSA9PiB1cGxvYWRQYWdlcyhlLnRhcmdldC5maWxlcyl9IC8+CiAgICAgICAgICA8QnV0dG9uIHZhcmlhbnQ9Imhlcm8iIG9uQ2xpY2s9eygpID0+IGZpbGVSZWYuY3VycmVudD8uY2xpY2soKX0+PFVwbG9hZCAvPiBVbmdnYWggQmFueWFrIEhhbGFtYW48L0J1dHRvbj4KICAgICAgICAgIHtidXN5ICYmIDxwIGNsYXNzTmFtZT0idGV4dC1zbSB0ZXh0LW11dGVkLWZvcmVncm91bmQiPntidXN5fTwvcD59CiAgICAgICAgICA8aW5wdXQgcmVmPXtyZXBsYWNlUmVmfSB0eXBlPSJmaWxlIiBhY2NlcHQ9ImltYWdlLyoiIGNsYXNzTmFtZT0iaGlkZGVuIiBvbkNoYW5nZT17KGUpID0+IHJlcGxhY2VQYWdlKGUudGFyZ2V0LmZpbGVzKX0gLz4KICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJncmlkIGdyaWQtY29scy0yIGdhcC0zIHNtOmdyaWQtY29scy0zIG1kOmdyaWQtY29scy00Ij4KICAgICAgICAgICAge3BhZ2VzLm1hcCgocCwgaSkgPT4gKAogICAgICAgICAgICAgIDxkaXYga2V5PXtwLmlkfSBjbGFzc05hbWU9InJvdW5kZWQtMnhsIGJvcmRlciBwLTIiPgogICAgICAgICAgICAgICAgPGltZyBzcmM9e3AuaW1hZ2VfdXJsfSBhbHQ9e2BIYWxhbWFuICR7cC5wb3NpdGlvbn1gfSBjbGFzc05hbWU9ImFzcGVjdC1bMy80XSB3LWZ1bGwgcm91bmRlZCBvYmplY3QtY292ZXIiIGxvYWRpbmc9ImxhenkiIC8+CiAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9Im10LTEgdGV4dC1jZW50ZXIgdGV4dC1zbSBmb250LXNlbWlib2xkIj5IYWxhbWFuIHtwLnBvc2l0aW9ufTwvcD4KICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJtdC0xIGZsZXgganVzdGlmeS1jZW50ZXIgZ2FwLTEiPgogICAgICAgICAgICAgICAgICA8QnV0dG9uIHNpemU9InNtIiB2YXJpYW50PSJvdXRsaW5lIiBkaXNhYmxlZD17aSA9PT0gMH0gb25DbGljaz17KCkgPT4gbW92ZVBhZ2UocCwgLTEpfSBhcmlhLWxhYmVsPSJOYWlrIj48QXJyb3dVcCAvPjwvQnV0dG9uPgogICAgICAgICAgICAgICAgICA8QnV0dG9uIHNpemU9InNtIiB2YXJpYW50PSJvdXRsaW5lIiBkaXNhYmxlZD17aSA9PT0gcGFnZXMubGVuZ3RoIC0gMX0gb25DbGljaz17KCkgPT4gbW92ZVBhZ2UocCwgMSl9IGFyaWEtbGFiZWw9IlR1cnVuIj48QXJyb3dEb3duIC8+PC9CdXR0b24+CiAgICAgICAgICAgICAgICAgIDxCdXR0b24gc2l6ZT0ic20iIHZhcmlhbnQ9Im91dGxpbmUiIG9uQ2xpY2s9eygpID0+IHsgcmVwbGFjZVRhcmdldC5jdXJyZW50ID0gcDsgcmVwbGFjZVJlZi5jdXJyZW50Py5jbGljaygpOyB9fT5HYW50aTwvQnV0dG9uPgogICAgICAgICAgICAgICAgICA8QnV0dG9uIHNpemU9InNtIiB2YXJpYW50PSJvdXRsaW5lIiBvbkNsaWNrPXsoKSA9PiBkZWxldGVQYWdlKHApfSBhcmlhLWxhYmVsPSJIYXB1cyI+PFRyYXNoMiAvPjwvQnV0dG9uPgogICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICkpfQogICAgICAgICAgPC9kaXY+CiAgICAgICAgICB7IXBhZ2VzLmxlbmd0aCAmJiA8cCBjbGFzc05hbWU9InRleHQtc20gdGV4dC1tdXRlZC1mb3JlZ3JvdW5kIj5CZWx1bSBhZGEgaGFsYW1hbi4gVW5nZ2FoIGdhbWJhciBoYWxhbWFuIGtvbWlrIGVwaXNvZGUgaW5pIOKAlCB1cnV0YW4gbWVuZ2lrdXRpIG5hbWEgYmVya2FzIChtaXMuIEhhbGFtYW4tMDEsIEhhbGFtYW4tMDIsIOKApikuPC9wPn0KICAgICAgICA8L2Rpdj4KICAgICAgKX0KICAgIDwvc2VjdGlvbj4KICApOwp9Cg==
+import { useQuery, useQueryClient } from "@tanstack/react-query";
+import { useEffect, useRef, useState } from "react";
+import { ArrowDown, ArrowUp, Image as ImageIcon, Plus, Save, Trash2, Upload } from "lucide-react";
+import { toast } from "sonner";
+import { supabase } from "@/integrations/supabase/client";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+
+const BUCKET = "comic-pages";
+
+function storagePathFromUrl(url: string): string | null {
+  const marker = `/${BUCKET}/`;
+  const i = url.indexOf(marker);
+  return i >= 0 ? decodeURIComponent(url.slice(i + marker.length)) : null;
+}
+
+async function uploadImage(file: File, path: string): Promise<string> {
+  const { error } = await supabase.storage.from(BUCKET).upload(path, file, { upsert: true, contentType: file.type || "image/jpeg" });
+  if (error) throw error;
+  const { data } = supabase.storage.from(BUCKET).getPublicUrl(path);
+  return data.publicUrl;
+}
+
+/* ============================== KELOLA KONTEN ============================== */
+
+type Sr = { id: string; title: string; slug: string; cover_url: string | null };
+type Ep = { id: string; series_id: string; number: number; title: string; synopsis: string | null; is_premium: boolean; published: boolean; ibrah: string[] | null; discussion_question: string | null };
+type Pg = { id: string; episode_id: string; position: number; image_url: string };
+
+export function ContentManager() {
+  const qc = useQueryClient();
+  const [seriesId, setSeriesId] = useState("");
+  const [episodeId, setEpisodeId] = useState("");
+  const [form, setForm] = useState<Partial<Ep>>({});
+  const [newTitle, setNewTitle] = useState("");
+  const [busy, setBusy] = useState("");
+  const fileRef = useRef<HTMLInputElement>(null);
+  const replaceRef = useRef<HTMLInputElement>(null);
+  const replaceTarget = useRef<Pg | null>(null);
+  const coverRef = useRef<HTMLInputElement>(null);
+
+  const { data: seriesList = [] } = useQuery({
+    queryKey: ["cm-series"],
+    queryFn: async () => ((await supabase.from("series").select("id, title, slug, cover_url").order("title")).data ?? []) as Sr[],
+  });
+  const { data: episodes = [] } = useQuery({
+    queryKey: ["cm-episodes", seriesId],
+    enabled: !!seriesId,
+    queryFn: async () => ((await supabase.from("episodes").select("id, series_id, number, title, synopsis, is_premium, published, ibrah, discussion_question").eq("series_id", seriesId).order("number")).data ?? []) as Ep[],
+  });
+  const { data: pages = [] } = useQuery({
+    queryKey: ["cm-pages", episodeId],
+    enabled: !!episodeId,
+    queryFn: async () => ((await supabase.from("episode_pages").select("id, episode_id, position, image_url").eq("episode_id", episodeId).order("position")).data ?? []) as Pg[],
+  });
+
+  const series = seriesList.find((s) => s.id === seriesId) ?? null;
+  const episode = episodes.find((e) => e.id === episodeId) ?? null;
+  useEffect(() => { if (episode) setForm({ ...episode }); }, [episodeId, episodes]);
+
+  const inv = () => {
+    qc.invalidateQueries({ queryKey: ["cm-episodes", seriesId] });
+    qc.invalidateQueries({ queryKey: ["cm-pages", episodeId] });
+    qc.invalidateQueries({ queryKey: ["cm-series"] });
+  };
+
+  async function createEpisode() {
+    if (!seriesId || !newTitle.trim()) { toast.error("Pilih seri dan isi judul episode."); return; }
+    const number = (episodes.reduce((m, e) => Math.max(m, e.number), 0) || 0) + 1;
+    const { data, error } = await supabase.from("episodes").insert({ series_id: seriesId, number, title: newTitle.trim(), published: false, is_premium: false }).select("id").single();
+    if (error) { toast.error(error.message); return; }
+    setNewTitle("");
+    toast.success(`Episode ${number} dibuat (masih draf).`);
+    inv();
+    if (data) setEpisodeId(data.id);
+  }
+
+  async function saveEpisode() {
+    if (!episode) return;
+    const row = {
+      number: Number(form.number ?? episode.number),
+      title: (form.title ?? "").trim(),
+      synopsis: form.synopsis ?? "",
+      ibrah: form.ibrah ?? [],
+      discussion_question: form.discussion_question ?? "",
+      is_premium: !!form.is_premium,
+      published: !!form.published,
+    };
+    if (!row.title) { toast.error("Judul tidak boleh kosong."); return; }
+    const { error } = await supabase.from("episodes").update(row).eq("id", episode.id);
+    if (error) { toast.error(error.message); return; }
+    toast.success("Episode tersimpan");
+    inv();
+  }
+
+  async function deleteEpisode() {
+    if (!episode) return;
+    if (!window.confirm(`Hapus episode "${episode.title}" beserta semua halamannya?`)) return;
+    for (const p of pages) {
+      const path = storagePathFromUrl(p.image_url);
+      if (path) await supabase.storage.from(BUCKET).remove([path]);
+    }
+    const { error } = await supabase.from("episodes").delete().eq("id", episode.id);
+    if (error) { toast.error(error.message); return; }
+    setEpisodeId("");
+    toast.success("Episode dihapus");
+    inv();
+  }
+
+  async function uploadPages(files: FileList | null) {
+    if (!files || !episode) return;
+    const list = Array.from(files).filter((f) => f.type.startsWith("image/")).sort((a, b) => a.name.localeCompare(b.name, undefined, { numeric: true }));
+    if (!list.length) { toast.error("Tidak ada berkas gambar."); return; }
+    let pos = pages.reduce((m, p) => Math.max(m, p.position), 0);
+    let ok = 0;
+    for (const [i, f] of list.entries()) {
+      setBusy(`Mengunggah ${i + 1} dari ${list.length}: ${f.name}`);
+      try {
+        pos += 1;
+        const ext = (f.name.split(".").pop() || "jpg").toLowerCase();
+        const url = await uploadImage(f, `${episode.id}/${String(pos).padStart(3, "0")}-${Date.now()}.${ext}`);
+        const { error } = await supabase.from("episode_pages").insert({ episode_id: episode.id, position: pos, image_url: url });
+        if (error) throw error;
+        ok += 1;
+      } catch (e) { toast.error(`${f.name}: ${(e as Error).message}`); pos -= 1; }
+    }
+    setBusy("");
+    toast.success(`${ok} halaman terunggah.`);
+    inv();
+    if (fileRef.current) fileRef.current.value = "";
+  }
+
+  async function movePage(p: Pg, dir: 1 | -1) {
+    const idx = pages.findIndex((x) => x.id === p.id);
+    const other = pages[idx + dir];
+    if (!other) return;
+    await supabase.from("episode_pages").update({ position: other.position }).eq("id", p.id);
+    await supabase.from("episode_pages").update({ position: p.position }).eq("id", other.id);
+    inv();
+  }
+
+  async function deletePage(p: Pg) {
+    if (!window.confirm(`Hapus halaman ${p.position}?`)) return;
+    const path = storagePathFromUrl(p.image_url);
+    if (path) await supabase.storage.from(BUCKET).remove([path]);
+    const { error } = await supabase.from("episode_pages").delete().eq("id", p.id);
+    if (error) { toast.error(error.message); return; }
+    toast.success("Halaman dihapus");
+    inv();
+  }
+
+  async function replacePage(files: FileList | null) {
+    const p = replaceTarget.current;
+    if (!files || !files[0] || !p) return;
+    setBusy("Mengganti halaman…");
+    try {
+      const f = files[0];
+      const ext = (f.name.split(".").pop() || "jpg").toLowerCase();
+      const url = await uploadImage(f, `${p.episode_id}/${String(p.position).padStart(3, "0")}-ganti-${Date.now()}.${ext}`);
+      const { error } = await supabase.from("episode_pages").update({ image_url: url }).eq("id", p.id);
+      if (error) throw error;
+      const old = storagePathFromUrl(p.image_url);
+      if (old) await supabase.storage.from(BUCKET).remove([old]);
+      toast.success("Halaman diganti");
+      inv();
+    } catch (e) { toast.error((e as Error).message); }
+    setBusy("");
+    if (replaceRef.current) replaceRef.current.value = "";
+  }
+
+  async function uploadCover(files: FileList | null) {
+    if (!files || !files[0] || !series) return;
+    setBusy("Mengunggah cover…");
+    try {
+      const f = files[0];
+      const ext = (f.name.split(".").pop() || "jpg").toLowerCase();
+      const url = await uploadImage(f, `covers/${series.id}-${Date.now()}.${ext}`);
+      const { error } = await supabase.from("series").update({ cover_url: url }).eq("id", series.id);
+      if (error) throw error;
+      toast.success("Cover seri diperbarui");
+      inv();
+    } catch (e) { toast.error((e as Error).message); }
+    setBusy("");
+    if (coverRef.current) coverRef.current.value = "";
+  }
+
+  return (
+    <section className="space-y-4 rounded-3xl bg-card p-5 shadow-card">
+      <h2 className="text-xl font-bold">Kelola Konten Komik</h2>
+
+      <div className="grid gap-3 sm:grid-cols-2">
+        <div>
+          <label className="block text-sm font-semibold" htmlFor="cm-series">Pilih seri</label>
+          <select id="cm-series" value={seriesId} onChange={(e) => { setSeriesId(e.target.value); setEpisodeId(""); }} className="mt-1 h-10 w-full rounded-md border bg-card px-3 text-sm">
+            <option value="">— pilih —</option>
+            {seriesList.map((s) => <option key={s.id} value={s.id}>{s.title}</option>)}
+          </select>
+        </div>
+        <div>
+          <label className="block text-sm font-semibold" htmlFor="cm-episode">Pilih episode</label>
+          <select id="cm-episode" value={episodeId} onChange={(e) => setEpisodeId(e.target.value)} className="mt-1 h-10 w-full rounded-md border bg-card px-3 text-sm" disabled={!seriesId}>
+            <option value="">— pilih —</option>
+            {episodes.map((e) => <option key={e.id} value={e.id}>Ep {e.number}: {e.title}{e.published ? "" : " (draf)"}</option>)}
+          </select>
+        </div>
+      </div>
+
+      {series && (
+        <div className="flex flex-wrap items-center gap-3 rounded-2xl border p-3">
+          {series.cover_url ? <img src={series.cover_url} alt={`Cover ${series.title}`} className="h-16 w-12 rounded object-cover" /> : <div className="flex h-16 w-12 items-center justify-center rounded bg-muted text-xs">Cover</div>}
+          <div className="text-sm">
+            <p className="font-semibold">{series.title}</p>
+            <p className="text-muted-foreground">Cover seri</p>
+          </div>
+          <input ref={coverRef} type="file" accept="image/*" className="hidden" onChange={(e) => uploadCover(e.target.files)} />
+          <Button variant="outline" onClick={() => coverRef.current?.click()}><ImageIcon /> Ganti Cover</Button>
+        </div>
+      )}
+
+      {seriesId && (
+        <div className="flex flex-wrap items-end gap-2">
+          <div className="min-w-56 flex-1">
+            <label className="block text-sm font-semibold" htmlFor="cm-new">Episode baru</label>
+            <Input id="cm-new" placeholder="Judul episode baru" value={newTitle} onChange={(e) => setNewTitle(e.target.value)} />
+          </div>
+          <Button variant="navy" onClick={createEpisode}><Plus /> Buat Episode (Draf)</Button>
+        </div>
+      )}
+
+      {episode && (
+        <div className="space-y-3 rounded-2xl border p-4">
+          <h3 className="font-bold">Data Episode</h3>
+          <div className="grid gap-3 sm:grid-cols-[100px_1fr]">
+            <div>
+              <label className="block text-sm font-semibold" htmlFor="f-number">Nomor</label>
+              <Input id="f-number" type="number" value={form.number ?? episode.number} onChange={(e) => setForm((f) => ({ ...f, number: Number(e.target.value) }))} />
+            </div>
+            <div>
+              <label className="block text-sm font-semibold" htmlFor="f-title">Judul</label>
+              <Input id="f-title" value={form.title ?? ""} onChange={(e) => setForm((f) => ({ ...f, title: e.target.value }))} />
+            </div>
+          </div>
+          <div>
+            <label className="block text-sm font-semibold" htmlFor="f-synopsis">Sinopsis</label>
+            <Textarea id="f-synopsis" rows={2} value={form.synopsis ?? ""} onChange={(e) => setForm((f) => ({ ...f, synopsis: e.target.value }))} />
+          </div>
+          <div>
+            <label className="block text-sm font-semibold" htmlFor="f-ibrah">Ibrah (satu per baris, maksimal 3)</label>
+            <Textarea id="f-ibrah" rows={3} value={(form.ibrah ?? []).join("\n")} onChange={(e) => setForm((f) => ({ ...f, ibrah: e.target.value.split("\n") }))} />
+          </div>
+          <div>
+            <label className="block text-sm font-semibold" htmlFor="f-discussion">Pertanyaan diskusi orang tua–anak</label>
+            <Input id="f-discussion" value={form.discussion_question ?? ""} onChange={(e) => setForm((f) => ({ ...f, discussion_question: e.target.value }))} />
+          </div>
+          <div className="flex flex-wrap gap-5 text-sm">
+            <label className="flex items-center gap-2"><input type="checkbox" checked={!!form.is_premium} onChange={(e) => setForm((f) => ({ ...f, is_premium: e.target.checked }))} /> Premium (berbayar)</label>
+            <label className="flex items-center gap-2"><input type="checkbox" checked={!!form.published} onChange={(e) => setForm((f) => ({ ...f, published: e.target.checked }))} /> Terbitkan (published)</label>
+          </div>
+          <div className="flex gap-2">
+            <Button variant="navy" onClick={saveEpisode}><Save /> Simpan Episode</Button>
+            <Button variant="outline" onClick={deleteEpisode}><Trash2 /> Hapus Episode</Button>
+          </div>
+
+          <h3 className="pt-2 font-bold">Halaman Komik — {pages.length} halaman</h3>
+          <input ref={fileRef} type="file" accept="image/*" multiple className="hidden" onChange={(e) => uploadPages(e.target.files)} />
+          <Button variant="hero" onClick={() => fileRef.current?.click()}><Upload /> Unggah Banyak Halaman</Button>
+          {busy && <p className="text-sm text-muted-foreground">{busy}</p>}
+          <input ref={replaceRef} type="file" accept="image/*" className="hidden" onChange={(e) => replacePage(e.target.files)} />
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4">
+            {pages.map((p, i) => (
+              <div key={p.id} className="rounded-2xl border p-2">
+                <img src={p.image_url} alt={`Halaman ${p.position}`} className="aspect-[3/4] w-full rounded object-cover" loading="lazy" />
+                <p className="mt-1 text-center text-sm font-semibold">Halaman {p.position}</p>
+                <div className="mt-1 flex justify-center gap-1">
+                  <Button size="sm" variant="outline" disabled={i === 0} onClick={() => movePage(p, -1)} aria-label="Naik"><ArrowUp /></Button>
+                  <Button size="sm" variant="outline" disabled={i === pages.length - 1} onClick={() => movePage(p, 1)} aria-label="Turun"><ArrowDown /></Button>
+                  <Button size="sm" variant="outline" onClick={() => { replaceTarget.current = p; replaceRef.current?.click(); }}>Ganti</Button>
+                  <Button size="sm" variant="outline" onClick={() => deletePage(p)} aria-label="Hapus"><Trash2 /></Button>
+                </div>
+              </div>
+            ))}
+          </div>
+          {!pages.length && <p className="text-sm text-muted-foreground">Belum ada halaman. Unggah gambar halaman komik episode ini — urutan mengikuti nama berkas (mis. Halaman-01, Halaman-02, …).</p>}
+        </div>
+      )}
+    </section>
+  );
+}
